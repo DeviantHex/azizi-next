@@ -4,48 +4,19 @@
       <h1>California Practice Areas</h1>
       <PageMetaBar />
       <p>
-        The Azizi Firm focuses primarily on California employment law and also represents clients in
-        personal injury, lemon law, and auto fraud matters. Use this hub to move into the practice area
-        that best matches your legal issue.
+        The Azizi Firm represents California clients in employment, injury, lemon law, and auto fraud
+        matters. Contact the firm for a free evaluation of your legal issue.
       </p>
     </div>
 
-    <div class="cards">
-      <NuxtLink v-for="item in practiceAreas" :key="item.href" :to="item.href" class="card">
-        <h2>{{ item.title }}</h2>
-        <p>{{ item.description }}</p>
-      </NuxtLink>
-    </div>
+    <VBtn to="/contact-us" color="secondary" size="large">Request a Free Evaluation</VBtn>
   </VContainer>
 </template>
 
 <script setup lang="ts">
 import { CONTENT_LAST_UPDATED, formatIsoDate } from '~/utils/seo'
 
-const description = 'Explore The Azizi Firm practice areas, including California employment law, personal injury, lemon law, and auto fraud.'
-
-const practiceAreas = [
-  {
-    title: 'Employment Law',
-    href: '/practice-areas/employment-law',
-    description: 'Wrongful termination, discrimination, harassment, retaliation, wage disputes, and more.',
-  },
-  {
-    title: 'Personal Injury',
-    href: '/practice-areas/personal-injury',
-    description: 'Serious injury claims including motor-vehicle collisions and wrongful death matters.',
-  },
-  {
-    title: 'Lemon Law',
-    href: '/practice-areas/lemon-law',
-    description: 'Vehicle buyback, replacement, and warranty-defect claims under California law.',
-  },
-  {
-    title: 'Auto Fraud',
-    href: '/practice-areas/auto-fraud',
-    description: 'Dealer misrepresentation, concealment, title issues, and consumer-vehicle disputes.',
-  },
-]
+const description = 'Contact The Azizi Firm for California employment, injury, lemon law, and auto fraud matters. Free consultation. No fees unless we win.'
 
 useSeoMeta({
   title: 'California Practice Areas | The Azizi Firm',

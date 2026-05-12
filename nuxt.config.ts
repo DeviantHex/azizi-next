@@ -51,7 +51,38 @@ export default defineNuxtConfig({
 
   sitemap: {
     sources: ['/api/__sitemap__/urls'],
-    exclude: ['/admin', '/login', '/thank-you'],
+    exclude: [
+      '/admin',
+      '/login',
+      '/thank-you',
+      '/car-accident-lawyer/**',
+      '/compare/**',
+      '/employment-law/**',
+      '/employment-lawyer/**',
+      '/lemon-law-attorney/**',
+      '/practice-areas/**',
+      '/wrongful-death-attorney/**',
+    ],
+  },
+
+  hooks: {
+    'pages:extend'(pages) {
+      const removedRouteNames = new Set([
+        'car-accident-lawyer-city',
+        'compare-slug',
+        'employment-law-subarea',
+        'employment-lawyer-city',
+        'lemon-law-attorney-city',
+        'practice-areas-area',
+        'wrongful-death-attorney-city',
+      ])
+
+      for (let i = pages.length - 1; i >= 0; i--) {
+        if (removedRouteNames.has(String(pages[i].name))) {
+          pages.splice(i, 1)
+        }
+      }
+    },
   },
 
   app: {

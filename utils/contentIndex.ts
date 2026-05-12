@@ -1,37 +1,6 @@
 import type { LinkItem } from './seo'
 
-export const employmentSubtopicLinks: LinkItem[] = [
-  {
-    title: 'California Wrongful Termination Lawyer',
-    href: '/employment-law/wrongful-termination',
-    description: 'Understand illegal firing claims, deadlines, and available damages under California law.',
-  },
-  {
-    title: 'California Workplace Discrimination Attorney',
-    href: '/employment-law/workplace-discrimination',
-    description: 'Protected classes, adverse actions, and evidence strategies for discrimination claims.',
-  },
-  {
-    title: 'California Sexual Harassment Lawyer',
-    href: '/employment-law/sexual-harassment',
-    description: 'Quid pro quo, hostile work environment, and employer liability issues.',
-  },
-  {
-    title: 'California Wage and Hour Disputes',
-    href: '/employment-law/wage-and-hour-disputes',
-    description: 'Unpaid wages, missed breaks, overtime, and payroll record violations.',
-  },
-  {
-    title: 'California Whistleblower Protection Lawyer',
-    href: '/employment-law/whistleblower-protection',
-    description: 'Retaliation claims under Labor Code section 1102.5 and related protections.',
-  },
-  {
-    title: 'California Workplace Retaliation Attorney',
-    href: '/employment-law/workplace-retaliation',
-    description: 'Claims involving protected complaints, leave, wage disputes, and employer retaliation.',
-  },
-]
+export const employmentSubtopicLinks: LinkItem[] = []
 
 export const faqPageLinks: LinkItem[] = [
   {
@@ -111,66 +80,30 @@ export const faqPageLinks: LinkItem[] = [
   },
 ]
 
-export const comparePageLinks: LinkItem[] = [
-  {
-    title: 'Wrongful Termination vs Workplace Discrimination',
-    href: '/compare/wrongful-termination-vs-discrimination',
-    description: 'How the claims overlap, when they differ, and why many cases involve both.',
-  },
-  {
-    title: 'Employment Lawyer vs Self-Representation',
-    href: '/compare/employment-lawyer-vs-self-representation',
-    description: 'When contingency representation changes leverage, valuation, and deadlines.',
-  },
-  {
-    title: 'Personal Injury vs Workers Compensation',
-    href: '/compare/personal-injury-vs-workers-comp',
-    description: 'Two claim paths with different defendants, damages, and proof burdens.',
-  },
-  {
-    title: 'Lemon Law vs Auto Fraud',
-    href: '/compare/lemon-law-vs-auto-fraud',
-    description: 'Warranty defect claims versus deceptive sales practice claims.',
-  },
-  {
-    title: 'Settlement vs Trial in Employment Cases',
-    href: '/compare/settlement-vs-trial',
-    description: 'Speed, privacy, risk, leverage, and recovery differences between paths.',
-  },
-  {
-    title: 'At-Will Employment vs Contract Employment in California',
-    href: '/compare/at-will-vs-contract-employment',
-    description: 'How employment status affects termination rights and contract claims.',
-  },
-  {
-    title: 'Exempt vs Non-Exempt Employees',
-    href: '/compare/exempt-vs-non-exempt',
-    description: 'Overtime, meal breaks, and misclassification issues under California law.',
-  },
-]
+export const comparePageLinks: LinkItem[] = []
 
 export function getBlogRelatedLinks(title = '', content = ''): LinkItem[] {
   const text = `${title} ${content}`.toLowerCase()
 
   if (text.includes('lemon') || text.includes('vehicle') || text.includes('dealer')) {
     return [
-      { title: 'California Lemon Law', href: '/practice-areas/lemon-law' },
-      { title: 'California Auto Fraud', href: '/practice-areas/auto-fraud' },
       faqPageLinks.find((link) => link.href === '/faq/lemon-law-requirements')!,
+      faqPageLinks.find((link) => link.href === '/faq/auto-fraud-consumer-rights')!,
+      faqPageLinks.find((link) => link.href === '/faq/contingency-fee-explained')!,
     ]
   }
 
   if (text.includes('injury') || text.includes('accident') || text.includes('collision')) {
     return [
-      { title: 'California Personal Injury Lawyer', href: '/practice-areas/personal-injury' },
-      { title: 'California Car Accident Lawyer', href: '/car-accident-lawyer/san-diego' },
       faqPageLinks.find((link) => link.href === '/faq/personal-injury-timeline')!,
+      faqPageLinks.find((link) => link.href === '/faq/california-statute-of-limitations')!,
+      faqPageLinks.find((link) => link.href === '/faq/contingency-fee-explained')!,
     ]
   }
 
   return [
-    employmentSubtopicLinks[0],
-    employmentSubtopicLinks[3],
     faqPageLinks[0],
+    faqPageLinks[1],
+    faqPageLinks[5],
   ]
 }

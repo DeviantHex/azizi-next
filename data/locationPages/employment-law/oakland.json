@@ -1,0 +1,26 @@
+{
+  "city": "Oakland",
+  "citySlug": "oakland",
+  "county": "Alameda County",
+  "population": "430,000",
+  "src": "/assets/images/employment-law.png",
+  "introText": "If you work in Oakland and have been wrongfully terminated, discriminated against, harassed, or denied fair wages, The Azizi Firm is here to help. As a California employment law firm, we represent workers throughout Alameda County against employers of all sizes - from logistics and port operations to healthcare systems and technology companies.",
+  "localInfo": "Oakland is a major Bay Area employment hub with key industries in logistics, healthcare, technology, and manufacturing - anchored by the Port of Oakland, one of the busiest container ports in the nation. The EEOC San Francisco District Office and California DLSE Oakland office handle employment claims from East Bay workers. The Alameda County Superior Court at the Rene C. Davidson Courthouse hears employment law cases including wrongful termination, discrimination, harassment, and wage disputes.",
+  "sections": [
+    {
+      "header": "Employment Law Cases We Handle in Oakland",
+      "body": "Our Oakland employment attorneys handle: wrongful termination, workplace discrimination (race, gender, age, disability, sexual orientation), sexual harassment, hostile work environment, whistleblower retaliation, wage and hour violations (unpaid wages, overtime, meal/rest breaks), employee misclassification, FMLA/CFRA violations, and employment contract disputes."
+    },
+    {
+      "header": "California Employment Laws That Protect Oakland Workers",
+      "body": "The California Fair Employment and Housing Act (FEHA) provides stronger protections than federal law. Oakland also has a local minimum wage ordinance and paid sick leave requirements that exceed state standards. California Labor Code sections 1102.5, 98.6, and 6310 protect whistleblowers. The California Family Rights Act (CFRA) provides job-protected leave."
+    }
+  ],
+  "faq": [
+    { "question": "How long do I have to file an employment claim in California?", "answer": "Statute of limitations vary by claim type. For FEHA discrimination claims, you must first file with the California Civil Rights Department (CRD) within three years. For wrongful termination claims, you generally have two years. For wage claims, you generally have three years. Contact us immediately to ensure your claim is timely filed." },
+    { "question": "What compensation can I recover in an employment law case?", "answer": "You may be entitled to lost wages (back pay and front pay), emotional distress damages, punitive damages, attorney fees, reinstatement, and other remedies. The value depends on your specific situation - call us for a free evaluation." }
+  ],
+  "whyHireText": "We understand California employment law and have experience litigating against large employers. Our firm's founder previously defended major insurance companies, giving us insider knowledge of how defendants approach employment cases. We leverage this experience to fight for maximum compensation for our clients.",
+  "nearbyCities": ["Berkeley", "San Leandro", "Alameda", "Emeryville", "Hayward"],
+  "contactUsText": "If you're facing a workplace issue in Oakland, contact The Azizi Firm today for a free, confidential consultation. We serve employees throughout Alameda County and all of California."
+}

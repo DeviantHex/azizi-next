@@ -1,0 +1,42 @@
+{
+  "pageTitle": "California Religious Discrimination Attorney",
+  "metaDescription": "California religious discrimination lawyer. Denied religious accommodation or harassed for your faith? Free consultation. We protect employees' religious rights in the workplace. Call (858) 829-3962.",
+  "src": "/assets/images/home-banner.jpg",
+  "imageHeader": "California <span>Religious Discrimination</span> Attorney",
+  "headerText": "Religious Discrimination",
+  "topParagraph": "Religious discrimination in the workplace occurs when an employer treats an employee unfavorably because of their religious beliefs, practices, or lack thereof. California law protects employees of all faiths — as well as atheists and agnostics — from discrimination and requires employers to provide reasonable accommodations for sincerely held religious beliefs. If your employer has failed to accommodate your religious practices or subjected you to harassment based on your faith, you have legal rights.",
+  "definitionHeader": "What is Religious Discrimination Under California Law?",
+  "definitionText": "Religious discrimination involves treating an employee unfavorably because of their religious beliefs, practices, or observances, or because of their lack of religious belief. Under FEHA, it applies to employers with five or more employees and encompasses all aspects of employment, including hiring, firing, pay, promotions, and workplace conditions. Employers must also provide reasonable accommodations for religious observances unless doing so would cause undue hardship.",
+  "sections": [
+    {
+      "type": "text",
+      "header": "California Religious Discrimination Protections",
+      "content": [
+        {
+          "header": "Duty to Provide Religious Accommodation",
+          "body": "Under FEHA, employers must accommodate an employee's sincerely held religious beliefs or observances, including scheduling changes for Sabbath observance, exceptions to dress codes for religious attire (such as hijabs, turbans, or yarmulkes), and time off for religious holidays. An employer may only deny an accommodation if it would result in significant difficulty or expense."
+        },
+        {
+          "header": "Protection from Religious Harassment",
+          "body": "Harassment based on religion — such as offensive remarks about an employee's faith, coercion to participate or not participate in religious activities, or mocking religious practices — is unlawful under FEHA. A hostile work environment created by religious harassment can support a claim even if the employee is not fired or demoted."
+        },
+        {
+          "header": "Protection for Non-Religious Beliefs",
+          "body": "FEHA explicitly protects not only religious belief but also the absence of religious belief. Atheists, agnostics, and those with non-religious ethical beliefs are protected from discrimination and harassment just as much as those who follow organized religions."
+        }
+      ]
+    }
+  ],
+  "stats": [
+    "The EEOC reported a significant increase in religious discrimination charges in recent years, recovering millions in damages annually",
+    "Religious accommodation claims frequently involve dress code and scheduling conflicts — particularly Sabbath observance and religious attire",
+    "California's FEHA provides broader religious protections than federal Title VII by covering employers with as few as five employees"
+  ],
+  "faq": [
+    { "question": "What kinds of religious accommodations must my employer provide?", "answer": "Common accommodations include flexible scheduling for religious observances or Sabbath, exceptions to dress codes for religious attire, permission to pray during breaks, accommodation of dietary restrictions at work events, and time off for religious holidays. The accommodation must be reasonable and cannot cause the employer undue hardship." },
+    { "question": "Can my employer force me to participate in religious activities at work?", "answer": "No. Employers cannot require employees to participate in religious services, prayers, or other activities as a condition of employment. Similarly, employers cannot retaliate against employees who refuse to participate. This protection applies regardless of whether you share the employer's faith or hold different beliefs." },
+    { "question": "What if my employer says my religious accommodation causes 'undue hardship'?", "answer": "Under California law, 'undue hardship' requires the employer to show that the accommodation would cause significant difficulty or expense. Trivial costs, the preferences of coworkers, or mere inconvenience do not constitute undue hardship. The employer must be able to demonstrate concrete, substantial hardship." }
+  ],
+  "whyHireText": "Our firm respects the diversity of faith traditions in California and understands the legal framework for protecting religious expression in the workplace. We help clients navigate the interactive process for religious accommodations, document employer non-compliance, and pursue claims when employers fail to respect sincerely held religious beliefs. Our experience allows us to distinguish between legitimate business concerns and pretextual denials of accommodation.",
+  "contactUsText": "Your faith — or lack thereof — should not be a barrier to fair treatment at work. If you have been discriminated against or denied religious accommodation, contact The Azizi Firm for a free consultation. We represent employees on a contingency fee basis — no fees unless we recover for you."
+}

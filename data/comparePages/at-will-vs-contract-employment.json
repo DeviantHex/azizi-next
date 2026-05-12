@@ -1,0 +1,94 @@
+{
+  "pageTitle": "At-Will Employment vs Contract Employment",
+  "metaDescription": "Compare at-will employment and contract employment in California, including how each status affects termination rights and wrongful termination claims.",
+  "introText": "Most California employees are at-will, but that does not mean employers can do anything they want. Some employees also have written, oral, or implied contractual protections that narrow the employer's termination power. Distinguishing the two can change both liability and damages.",
+  "comparisons": [
+    {
+      "header": "At-Will Employment",
+      "body": "The employer and employee can usually end the relationship at any time, with or without cause, so long as the reason is not unlawful."
+    },
+    {
+      "header": "Contract Employment",
+      "body": "The relationship is shaped by agreed terms, which may limit when and how the employer can terminate the employee or reduce pay, duties, or term length."
+    }
+  ],
+  "comparisonTableHeaders": {
+    "left": "At-Will",
+    "right": "Contract"
+  },
+  "comparisonTable": [
+    {
+      "topic": "Termination flexibility",
+      "left": "Broad, unless the reason is illegal.",
+      "right": "Limited by the contract language and implied promises, if any."
+    },
+    {
+      "topic": "Need for cause?",
+      "left": "Usually no.",
+      "right": "Sometimes yes, depending on the agreement."
+    },
+    {
+      "topic": "Main legal risk to employer",
+      "left": "Discrimination, retaliation, leave violations, public-policy termination, and similar unlawful motives.",
+      "right": "All of the above, plus breach-of-contract exposure if the employer ignored agreed limits."
+    },
+    {
+      "topic": "Important documents",
+      "left": "Handbooks, offer letters, policies, and complaint history.",
+      "right": "Written contracts, bonus plans, severance terms, renewal language, and oral promises."
+    }
+  ],
+  "sections": [
+    {
+      "header": "Why at-will does not eliminate employee rights",
+      "body": "Employers often rely on the phrase 'at-will' as if it ends the analysis. It does not. Even at-will employees are protected against discrimination, retaliation, whistleblower retaliation, leave-related termination, and firings that violate public policy. Many strong wrongful termination cases begin with an at-will employee."
+    },
+    {
+      "header": "How implied contracts arise",
+      "body": "A company may unintentionally limit its own freedom through handbooks, repeated assurances, progressive-discipline policies, or language suggesting that termination will occur only for cause. Those facts do not always create an enforceable contract, but they can materially change the case analysis."
+    },
+    {
+      "header": "Why contract status affects settlement value",
+      "body": "When a valid contract exists, the employer may face damages beyond the typical at-will termination analysis, including compensation tied to the contract term or promised benefits. That can increase pressure in pre-suit negotiations and litigation."
+    }
+  ],
+  "decisionGuide": [
+    {
+      "useCase": "Your offer letter says employment is at-will and nothing limited termination",
+      "recommendation": "Start with at-will analysis",
+      "reason": "The case may still be strong if the firing was discriminatory, retaliatory, or otherwise unlawful."
+    },
+    {
+      "useCase": "You had a fixed term, severance promise, or for-cause language",
+      "recommendation": "Review for contract rights",
+      "reason": "The employer may have breached express protections in addition to violating statutory rights."
+    },
+    {
+      "useCase": "Management repeatedly promised long-term job security",
+      "recommendation": "Investigate implied-contract issues",
+      "reason": "Some cases turn on whether the employer's own words and policies changed the default at-will relationship."
+    }
+  ],
+  "bottomLine": "At-will status answers only part of the question. The real legal issue is whether the employer's conduct violated the law, and whether any contract or policy language narrowed the employer's right to terminate in the first place.",
+  "faq": [
+    {
+      "question": "Does a written offer letter create a contract?",
+      "answer": "Not necessarily. Many offer letters explicitly confirm at-will status. The exact language matters."
+    },
+    {
+      "question": "Can an at-will employee still sue for wrongful termination?",
+      "answer": "Yes. At-will employees can still sue if the firing was discriminatory, retaliatory, leave-related, or otherwise unlawful under California law."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "California Wrongful Termination Lawyer",
+      "url": "/employment-law/wrongful-termination"
+    },
+    {
+      "label": "California Employment Contract Disputes",
+      "url": "/employment-law/breach-of-employment-contract"
+    }
+  ],
+  "contactUsText": "Contact The Azizi Firm if you were told your employment was at-will but your firing also involved retaliation, discrimination, contract language, or broken job-security promises."
+}

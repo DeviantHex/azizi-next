@@ -1,0 +1,42 @@
+{
+  "pageTitle": "California Non-Compete Agreements Attorney",
+  "metaDescription": "California non-compete attorney. Your employer is trying to enforce an illegal non-compete? Free consultation. California law strongly protects employee mobility. Call (858) 829-3962.",
+  "src": "/assets/images/employment-law.png",
+  "imageHeader": "California <span>Non-Compete Agreements</span> Attorney",
+  "headerText": "Non-Compete Agreements",
+  "topParagraph": "California law takes a uniquely strong stance against non-compete agreements. Under Business and Professions Code §16600, virtually all non-compete clauses in employment contracts are void and unenforceable — regardless of how reasonable they may seem. Despite this, many employers continue to include illegal non-compete provisions in their agreements, and recent laws have strengthened employee protections by requiring employers to notify employees of void provisions.",
+  "definitionHeader": "What Are Non-Compete Agreements Under California Law?",
+  "definitionText": "A non-compete agreement is a contractual provision that restricts an employee's ability to work for a competitor or start a competing business after leaving an employer. Under California Business and Professions Code §16600, every contract that restrains anyone from engaging in a lawful profession, trade, or business is void — with very limited exceptions such as the sale of a business or dissolution of a partnership. This has been the law in California since 1872 and remains one of the strongest anti-non-compete statutes in the nation.",
+  "sections": [
+    {
+      "type": "text",
+      "header": "California Non-Compete Law",
+      "content": [
+        {
+          "header": "Business and Professions Code §16600",
+          "body": "This foundational statute provides that 'every contract by which anyone is restrained from engaging in a lawful profession, trade, or business of any kind is to that extent void.' California courts have consistently interpreted this broadly, invalidating both outright non-competes and de facto non-competes — such as customer non-solicitation clauses that effectively prevent an employee from working in their field."
+        },
+        {
+          "header": "SB 699: Prohibition on Employer Enforcement",
+          "body": "Effective January 2024, California Senate Bill 699 strengthened protections by prohibiting employers from entering into or attempting to enforce non-compete agreements, regardless of where the contract was signed. This means an employer cannot enforce an out-of-state non-compete against a California employee. Employers who violate this law may be subject to civil penalties and damages."
+        },
+        {
+          "header": "Narrow Exceptions",
+          "body": "The only recognized exceptions to the rule against non-competes in California are in connection with the sale of a business (the seller may agree not to compete within a specific geographic area), dissolution of a partnership, and limited trade secret protection — which cannot be used as a backdoor non-compete. Even these exceptions are narrowly construed."
+        }
+      ]
+    }
+  ],
+  "stats": [
+    "California's §16600 has been called the strongest anti-non-compete law in the United States",
+    "SB 699 now prohibits employers from enforcing out-of-state non-compete agreements against employees who work in California",
+    "Recent FTC rulemaking would ban most non-competes nationally, but California has already had this protection since 1872"
+  ],
+  "faq": [
+    { "question": "My employer is trying to enforce a non-compete I signed in another state. Can they?", "answer": "Under California's SB 699 (effective 2024), employers cannot enforce non-compete agreements against employees who work in California, regardless of where the agreement was signed. Even before SB 699, California courts refused to enforce out-of-state non-competes that conflict with California law. If an employer threatens you with a non-compete, consult an attorney." },
+    { "question": "Can my employer use a non-solicitation or non-disclosure agreement instead?", "answer": "While California largely voids non-competes, non-solicitation and non-disclosure agreements are treated differently. Non-solicitation clauses that prevent an employee from soliciting former clients may be enforceable if narrowly tailored to protect trade secrets or confidential information — but courts scrutinize them. Non-disclosure agreements (NDAs) protecting legitimate trade secrets are generally valid." },
+    { "question": "What should I do if I received a cease-and-desist letter from my former employer?", "answer": "Do not ignore it, but do not panic. Many cease-and-desist letters asserting non-compete rights are unenforceable under California law. Document the communication and contact an employment attorney. California law may allow you to sue the employer for wrongful threats and recover attorney's fees and damages for interference with your employment." }
+  ],
+  "whyHireText": "Our firm has significant experience advising employees on their rights under California's powerful anti-non-compete statute and helping them fight back against employer attempts to restrict their mobility. We understand the interplay between §16600, trade secret law, and federal protections. Whether you need a demand letter to your former employer, a response to a cease-and-desist, or affirmative litigation, we have the expertise to protect your right to work.",
+  "contactUsText": "Your right to earn a living should not be restricted by an illegal non-compete. If your employer is trying to enforce a non-compete agreement or has threatened you with legal action, contact The Azizi Firm for a free consultation. We represent employees throughout California and handle these matters on a contingency or hourly basis depending on the circumstances."
+}

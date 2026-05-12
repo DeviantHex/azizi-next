@@ -1,0 +1,26 @@
+{
+  "city": "San Francisco",
+  "citySlug": "san-francisco",
+  "county": "San Francisco County",
+  "population": "808,000",
+  "src": "/assets/images/employment-law.png",
+  "introText": "If you work in San Francisco and have been wrongfully terminated, discriminated against, harassed, or denied fair wages, The Azizi Firm is here to help. As a California employment law firm, we represent workers throughout San Francisco County against employers of all sizes - from tech unicorns and fintech companies to healthcare institutions and hospitality businesses.",
+  "localInfo": "San Francisco is the hub of the global tech industry, home to major employers in software, finance, healthcare, and professional services. The EEOC San Francisco District Office and California DLSE San Francisco office handle employment claims from Bay Area workers. The San Francisco Superior Court on McAllister Street hears employment law cases including wrongful termination, discrimination, harassment, and wage disputes.",
+  "sections": [
+    {
+      "header": "Employment Law Cases We Handle in San Francisco",
+      "body": "Our San Francisco employment attorneys handle: wrongful termination, workplace discrimination (race, gender, age, disability, sexual orientation), sexual harassment, hostile work environment, whistleblower retaliation, wage and hour violations (unpaid wages, overtime, meal/rest breaks), employee misclassification, FMLA/CFRA violations, and employment contract disputes including stock option and equity compensation issues."
+    },
+    {
+      "header": "California Employment Laws That Protect San Francisco Workers",
+      "body": "The California Fair Employment and Housing Act (FEHA) provides stronger protections than federal law, and San Francisco has additional local ordinances like the San Francisco Family Friendly Workplace Ordinance and the San Francisco Fair Chance Ordinance. California Labor Code sections 1102.5, 98.6, and 6310 protect whistleblowers. The California Family Rights Act (CFRA) provides job-protected leave."
+    }
+  ],
+  "faq": [
+    { "question": "How long do I have to file an employment claim in California?", "answer": "Statute of limitations vary by claim type. For FEHA discrimination claims, you must first file with the California Civil Rights Department (CRD) within three years. For wrongful termination claims, you generally have two years. For wage claims, you generally have three years. Contact us immediately to ensure your claim is timely filed." },
+    { "question": "What compensation can I recover in an employment law case?", "answer": "You may be entitled to lost wages (back pay and front pay), emotional distress damages, punitive damages, attorney fees, reinstatement, and other remedies. The value depends on your specific situation - call us for a free evaluation." }
+  ],
+  "whyHireText": "We understand California employment law and have experience litigating against large employers. Our firm's founder previously defended major insurance companies, giving us insider knowledge of how defendants approach employment cases. We leverage this experience to fight for maximum compensation for our clients.",
+  "nearbyCities": ["Oakland", "Daly City", "San Mateo", "Berkeley", "South San Francisco"],
+  "contactUsText": "If you're facing a workplace issue in San Francisco, contact The Azizi Firm today for a free, confidential consultation. We serve employees throughout San Francisco County and all of California."
+}

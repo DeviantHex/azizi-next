@@ -1,0 +1,42 @@
+{
+  "pageTitle": "California Severance Agreements Lawyer",
+  "metaDescription": "California severance agreement attorney. Review, negotiate, or challenge your severance package. Free consultation. Know your rights before you sign a California severance agreement. Call (858) 829-3962.",
+  "src": "/assets/images/employment-law.png",
+  "imageHeader": "California <span>Severance Agreements</span> Lawyer",
+  "headerText": "Severance Agreements",
+  "topParagraph": "Severance agreements are contracts offered by employers to departing employees that provide compensation and benefits in exchange for the employee's release of legal claims. In California, employers are not legally required to offer severance — unless promised in a contract or policy — but many do to obtain a release. Before signing any severance agreement, you should understand what rights you are giving up and whether the compensation is fair given the value of your potential claims.",
+  "definitionHeader": "What Are Severance Agreements Under California Law?",
+  "definitionText": "A severance agreement is a contract between an employer and a departing employee in which the employer agrees to pay money or provide benefits in exchange for the employee's agreement to release the employer from legal claims. Under California law, certain waivers — including waivers of FEHA discrimination claims — must comply with specific requirements. Severance agreements may also include non-disparagement, confidentiality, non-compete (often unenforceable in California), and cooperation clauses.",
+  "sections": [
+    {
+      "type": "text",
+      "header": "California Severance Agreement Law",
+      "content": [
+        {
+          "header": "Required Terms Under California Law",
+          "body": "For a waiver of FEHA claims or other civil rights claims to be valid in California, the agreement must be knowing and voluntary. California Civil Code §1542 waivers (releasing unknown claims) must be explicit. Employees over 40 have additional protections under the federal Older Workers Benefit Protection Act (OWBPA), including 21 days to consider and 7 days to revoke."
+        },
+        {
+          "header": "What California Severance Agreements Cannot Contain",
+          "body": "California law prohibits certain provisions in severance agreements, including blanket non-compete clauses (void under Business and Professions Code §16600), provisions that prevent an employee from testifying in legal proceedings, waivers of claims that arise after the agreement is signed, and waivers of claims for indemnification. Confidentiality provisions related to unlawful acts may also be restricted under recent legislation."
+        },
+        {
+          "header": "Negotiating Your Severance Package",
+          "body": "Severance packages are often negotiable. Key areas for negotiation include increasing the severance amount, extending benefits continuation (COBRA subsidies), accelerating stock vesting, modifying non-disparagement provisions to be mutual, and preserving rights to unemployment benefits. An attorney can identify leverage points based on potential claims and negotiate a better package."
+        }
+      ]
+    }
+  ],
+  "stats": [
+    "Employees who negotiate their severance packages typically increase their compensation by 10-25% or more",
+    "California Civil Code §1542 waivers must be explicit — a general release does not waive unknown claims",
+    "Non-compete clauses in severance agreements are almost universally unenforceable in California regardless of the employer's home state"
+  ],
+  "faq": [
+    { "question": "Should I sign the severance agreement my employer gave me?", "answer": "Never sign a severance agreement without having it reviewed by an employment attorney. Once you sign, you are releasing potentially valuable legal claims. An attorney can evaluate whether the compensation is fair based on your potential claims, identify problematic provisions, and negotiate improvements before you commit." },
+    { "question": "Can I still file for unemployment if I accept severance?", "answer": "In most cases, yes. Severance pay does not generally disqualify you from receiving unemployment benefits in California. However, your employer may contest your unemployment claim if the separation was framed as a resignation rather than a termination. The terms of the severance agreement should not waive your right to seek unemployment." },
+    { "question": "What if my employer threatens to withhold my final paycheck unless I sign?", "answer": "This is illegal. Under California law, final wages must be paid regardless of whether you sign a severance agreement. Conditioning your final paycheck on signing a release is coercive and can render the entire agreement unenforceable. If your employer engages in this tactic, contact an attorney immediately." }
+  ],
+  "whyHireText": "Our firm has reviewed and negotiated hundreds of severance agreements across all levels — from entry-level workers to C-suite executives. We understand the value of potential employment claims and can assess whether the severance offer is fair. When it is not, we know how to negotiate for more while avoiding common traps and overly restrictive post-employment provisions.",
+  "contactUsText": "Before you sign anything, make sure you understand your rights. Contact The Azizi Firm for a free review and assessment of your severance agreement. We can help you negotiate better terms and ensure you do not unknowingly give up valuable legal claims. Fees are typically structured as a percentage of any increased recovery we obtain for you."
+}

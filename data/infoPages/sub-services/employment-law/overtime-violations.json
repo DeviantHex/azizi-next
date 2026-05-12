@@ -1,0 +1,42 @@
+{
+  "pageTitle": "California Overtime Violations Attorney",
+  "metaDescription": "California overtime violations lawyer. Denied overtime pay or misclassified as exempt? Free consultation. We recover unpaid overtime for California workers. Call (858) 829-3962.",
+  "src": "/assets/images/home-banner.jpg",
+  "imageHeader": "California <span>Overtime Violations</span> Attorney",
+  "headerText": "Overtime Violations",
+  "topParagraph": "California's overtime laws are among the most generous for employees in the country, requiring premium pay not just for extended workweeks but also for long workdays. Despite these clear requirements, many employers fail to pay overtime correctly — whether by misclassifying employees as exempt, requiring off-the-clock work, or miscalculating the regular rate of pay. If you have worked overtime without proper compensation, you may be owed significant back pay.",
+  "definitionHeader": "What Are Overtime Violations Under California Law?",
+  "definitionText": "An overtime violation occurs when an employer fails to pay the legally required overtime premium to a non-exempt employee. In California, overtime is defined more broadly than under federal law: employees are entitled to 1.5 times their regular rate for hours worked beyond 8 in a single day or 40 in a week, and double time (2x) for hours beyond 12 in a day or 8 on the seventh consecutive day of a workweek. Violations also include failure to properly calculate the regular rate of pay when it includes bonuses or commissions.",
+  "sections": [
+    {
+      "type": "text",
+      "header": "California Overtime Laws",
+      "content": [
+        {
+          "header": "Daily Overtime Requirements",
+          "body": "Unlike federal law, which only requires overtime after 40 hours in a week, California mandates overtime pay based on daily hours. Non-exempt employees are owed 1.5x pay for hours 9-12 in a day and 2x (double time) for hours beyond 12 in a day. This daily requirement is unique to California and a few other states."
+        },
+        {
+          "header": "Seventh Day Overtime",
+          "body": "California Labor Code §510 requires that employees working seven consecutive days in a workweek receive 1.5x pay for the first 8 hours on the seventh day and 2x pay for any hours beyond 8 on the seventh day. This applies regardless of how many total hours the employee worked during the week."
+        },
+        {
+          "header": "Regular Rate of Pay Calculation",
+          "body": "The overtime premium must be calculated based on the 'regular rate of pay,' which includes not just the hourly rate but also non-discretionary bonuses, commissions, and certain other compensation. Employers often miscalculate this by using only the base hourly rate, resulting in underpaid overtime."
+        }
+      ]
+    }
+  ],
+  "stats": [
+    "California is one of only a handful of states with daily overtime requirements — most states follow the federal 40-hour weekly standard",
+    "The California Labor Commissioner recovers tens of millions of dollars annually in unpaid overtime and related penalties",
+    "Overtime misclassification — where employers wrongly classify workers as exempt — is one of the most common wage and hour violations in the state"
+  ],
+  "faq": [
+    { "question": "Does California overtime apply to salaried employees?", "answer": "Being paid a salary does not automatically make you exempt from overtime. To be exempt, you must meet both a salary threshold (at least twice the minimum wage for full-time employment) and a duties test for an exempt category (executive, administrative, or professional). If you primarily perform non-exempt work, you may be entitled to overtime regardless of your salary." },
+    { "question": "Can my employer average my hours over two weeks to avoid overtime?", "answer": "No. California law does not permit averaging hours over two weeks or using a 'fluctuating workweek' method. Overtime is calculated based on each individual workday and each workweek. An employer cannot offset a long day with a short day to avoid paying overtime." },
+    { "question": "What if my employer told me I was not authorized to work overtime?", "answer": "If you worked overtime that the employer knew or should have known about, you must be paid for it — even if the overtime was not pre-authorized. Employers cannot accept the benefit of overtime work while refusing to pay for it. However, if you worked overtime against explicit instructions and the employer was unaware, the analysis is more complex." }
+  ],
+  "whyHireText": "We have deep expertise in California's unique overtime requirements, including daily overtime, seventh-day overtime, and the complexities of regular rate calculation. Our firm has successfully challenged both individual and systemic overtime violations — from misclassification to off-the-clock work to sophisticated compensation schemes designed to avoid overtime obligations.",
+  "contactUsText": "If you have worked overtime and not been properly paid, you may be owed substantial back wages. Contact The Azizi Firm for a free consultation about your overtime claim. We handle these cases on a contingency fee basis — you pay nothing unless we recover your unpaid overtime and penalties."
+}

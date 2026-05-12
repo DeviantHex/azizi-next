@@ -1,0 +1,30 @@
+{
+  "city": "San Francisco",
+  "citySlug": "san-francisco",
+  "county": "San Francisco County",
+  "src": "/assets/images/car-accidents.png",
+  "introText": "If you've been injured in a car accident in San Francisco, The Azizi Firm is here to help. Navigating SF's steep hills, dense traffic, and complex intersections creates unique accident risks. We represent victims of auto accidents, truck accidents, motorcycle accidents, bicycle accidents, and rideshare accidents. Our experienced car accident attorneys fight to get you maximum compensation for medical bills, lost wages, pain and suffering, and all other damages.",
+  "sections": [
+    {
+      "header": "Types of Car Accident Cases We Handle",
+      "body": "Our San Francisco car accident lawyers handle all types of motor vehicle accidents: rear-end collisions on steep hills, T-bone accidents at complex intersections, head-on collisions, hit and run accidents, drunk driving accidents, distracted driving accidents, rideshare (Uber/Lyft) accidents which are extremely common in SF, truck accidents on US-101 and I-280, motorcycle accidents, pedestrian accidents, and bicycle accidents involving Muni vehicles or cable cars."
+    },
+    {
+      "header": "Common Causes of Car Accidents in San Francisco",
+      "body": "San Francisco's unique geography creates specific accident risks: brake failure on steep grades, limited visibility at hilltop intersections, heavy pedestrian and cyclist traffic, dense urban congestion, frequent fog reducing visibility, tourists unfamiliar with local roads, and the high volume of rideshare vehicles making sudden stops. Our attorneys investigate every accident to identify all liable parties and insurance coverage."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What should I do after a car accident in San Francisco?",
+      "answer": "Call 911, seek medical attention, document the scene including the steepness of the road if relevant, take photos of all vehicles and surrounding area, exchange information, get witness contacts, and contact a car accident lawyer before speaking with insurance companies. If a Muni vehicle or city vehicle is involved, special claim procedures apply."
+    },
+    {
+      "question": "How much is my San Francisco car accident case worth?",
+      "answer": "Case value depends on injury severity, medical costs in the Bay Area (which tend to be higher than average), lost wages given SF's high earning potential, pain and suffering, and available insurance coverage. We offer free case evaluations."
+    }
+  ],
+  "whyHireText": "Our founder previously defended major insurance companies, giving us insider knowledge of how they evaluate and settle claims. We understand the high cost of living and medical care in the Bay Area and fight for settlements that truly reflect San Francisco economic realities.",
+  "nearbyCities": ["Oakland", "Daly City", "San Mateo", "Berkeley", "South San Francisco"],
+  "contactUsText": "If you've been injured in a car accident in San Francisco, contact The Azizi Firm today for a free, confidential consultation. No fees unless we win."
+}

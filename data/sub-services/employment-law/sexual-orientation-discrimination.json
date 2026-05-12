@@ -1,0 +1,42 @@
+{
+  "pageTitle": "California Sexual Orientation Discrimination Lawyer",
+  "metaDescription": "California sexual orientation discrimination attorney. LGBTQ+ workplace discrimination claims. Free consultation. We fight for employees discriminated against based on sexual orientation. Call (858) 829-3962.",
+  "src": "/assets/images/employment-law.png",
+  "imageHeader": "California <span>Sexual Orientation Discrimination</span> Lawyer",
+  "headerText": "Sexual Orientation Discrimination",
+  "topParagraph": "Sexual orientation discrimination occurs when an employer treats an employee unfavorably because of their sexual orientation — whether gay, lesbian, bisexual, heterosexual, or asexual. California was among the first states to protect LGBTQ+ workers from discrimination, and its laws remain some of the most comprehensive in the country. If you have been harassed, denied a promotion, or terminated because of your sexual orientation, you have strong legal protections.",
+  "definitionHeader": "What is Sexual Orientation Discrimination Under California Law?",
+  "definitionText": "Under FEHA, sexual orientation discrimination includes any adverse employment action — hiring, firing, pay, job assignments, promotions, layoffs, training, benefits — based on an employee's actual or perceived sexual orientation. FEHA also prohibits harassment based on sexual orientation and protects against discrimination based on an employee's association with LGBTQ+ individuals. California law explicitly recognizes that sexual orientation discrimination is a form of sex discrimination.",
+  "sections": [
+    {
+      "type": "text",
+      "header": "California Sexual Orientation Discrimination Protections",
+      "content": [
+        {
+          "header": "FEHA's Comprehensive Protection",
+          "body": "FEHA explicitly prohibits discrimination and harassment based on sexual orientation, applying to employers with five or more employees. Covered actions include but are not limited to failure to hire, termination, unequal pay, denial of benefits (including spousal benefits for same-sex partners), and creating or allowing a hostile work environment."
+        },
+        {
+          "header": "Harassment and Hostile Work Environment",
+          "body": "Harassment based on sexual orientation can include offensive jokes, slurs, epithets, name-calling, physical assaults, threats, intimidation, ridicule, insults, or the display of offensive materials. Such conduct, when severe or pervasive, creates a hostile work environment and is illegal under California law."
+        },
+        {
+          "header": "Bostock and Federal Protections",
+          "body": "In the landmark 2020 case Bostock v. Clayton County, the U.S. Supreme Court held that Title VII of the Civil Rights Act of 1964 prohibits employment discrimination based on sexual orientation and transgender status as forms of sex discrimination. This provides an additional layer of federal protection alongside California's state law protections."
+        }
+      ]
+    }
+  ],
+  "stats": [
+    "Studies indicate that approximately 1 in 4 LGBTQ+ employees have experienced some form of workplace discrimination or harassment",
+    "California has prohibited sexual orientation discrimination in employment since 1992 — decades before federal protections were established",
+    "The EEOC has prioritized enforcement of LGBTQ+ discrimination claims since the Bostock decision in 2020"
+  ],
+  "faq": [
+    { "question": "Can my employer refuse to provide spousal benefits to my same-sex partner?", "answer": "Under California law, an employer that provides spousal benefits must offer them equally regardless of the employee's sexual orientation and regardless of the gender of the employee's spouse. Denying benefits to same-sex spouses constitutes unlawful discrimination under FEHA." },
+    { "question": "What if my employer doesn't know my sexual orientation?", "answer": "Discrimination based on perceived sexual orientation is also protected under California law. Even if you are not actually gay, lesbian, or bisexual, if your employer discriminates against you because they perceive you to be, that is unlawful. Similarly, discrimination based on stereotypes about sexual orientation is prohibited." },
+    { "question": "Can coworkers make homophobic comments if the supervisor doesn't?", "answer": "Coworker harassment based on sexual orientation that is severe or pervasive may create a hostile work environment, and the employer may be liable if they knew or should have known about it and failed to take appropriate corrective action. Report any harassment to HR or a supervisor immediately to put the employer on notice." }
+  ],
+  "whyHireText": "We are committed to protecting the rights of LGBTQ+ employees in the California workplace. Our firm understands the unique challenges faced by LGBTQ+ workers, from overt discrimination to subtle forms of bias, and we have the experience to document and prove these claims. We approach every case with respect, discretion, and a thorough understanding of both California and federal law.",
+  "contactUsText": "Your sexual orientation should never affect your career. If you have experienced discrimination or harassment because of your sexual orientation at work, contact The Azizi Firm for a free, confidential consultation. We handle cases on a contingency fee basis — no fees unless we recover for you."
+}

@@ -1,0 +1,42 @@
+{
+  "pageTitle": "California Sexual Harassment Attorney",
+  "metaDescription": "California sexual harassment attorney. Quid pro quo and hostile work environment claims. Free, confidential consultation. We fight for victims of workplace sexual harassment statewide. Call (858) 829-3962.",
+  "src": "/assets/images/employment-law.png",
+  "imageHeader": "California <span>Sexual Harassment</span> Attorney",
+  "headerText": "Sexual Harassment",
+  "topParagraph": "Sexual harassment in the workplace remains a pervasive problem despite decades of legal protections. California law prohibits two primary forms of sexual harassment: quid pro quo harassment, where job benefits are conditioned on sexual favors, and hostile work environment harassment, where unwelcome conduct of a sexual nature creates an intimidating or offensive workplace. No employee should have to endure sexual harassment to earn a living.",
+  "definitionHeader": "What Constitutes Sexual Harassment Under California Law?",
+  "definitionText": "Under the California Fair Employment and Housing Act (FEHA), sexual harassment includes unwelcome sexual advances, requests for sexual favors, and other verbal, visual, or physical conduct of a sexual nature. It applies regardless of the harasser's or victim's gender. Sexual harassment can be committed by supervisors, coworkers, and even non-employees such as clients or vendors.",
+  "sections": [
+    {
+      "type": "text",
+      "header": "Types of Sexual Harassment in California",
+      "content": [
+        {
+          "header": "Quid Pro Quo Harassment",
+          "body": "This occurs when a supervisor or manager conditions employment decisions — such as hiring, promotion, or continued employment — on an employee's submission to sexual conduct. A single incident of quid pro quo harassment can form the basis of a valid legal claim."
+        },
+        {
+          "header": "Hostile Work Environment Harassment",
+          "body": "A hostile work environment exists when unwelcome sexual conduct is so severe or pervasive that it alters the conditions of employment and creates an abusive working environment. This can include offensive jokes, slurs, inappropriate touching, displaying sexually suggestive materials, or repeated unwanted advances."
+        },
+        {
+          "header": "California's Mandatory Sexual Harassment Training",
+          "body": "California requires all employers with five or more employees to provide sexual harassment prevention training to all employees — one hour for non-supervisory employees and two hours for supervisors every two years. Failure to provide this training can be evidence of an employer's negligence."
+        }
+      ]
+    }
+  ],
+  "stats": [
+    "Approximately 25-30% of women report experiencing sexual harassment in the workplace during their careers",
+    "The EEOC recovered over $60 million for sexual harassment victims nationally in fiscal year 2023",
+    "California's mandatory training requirement covers an estimated 16 million employees across the state"
+  ],
+  "faq": [
+    { "question": "What should I do if I am being sexually harassed at work?", "answer": "Document every incident in detail, including dates, times, witnesses, and what was said or done. Report the harassment through your employer's internal complaint procedures. Keep copies of all complaints and any responses. Consult with an attorney to understand your legal options before any deadlines pass." },
+    { "question": "Can I sue my coworker individually for sexual harassment?", "answer": "In California, individual harassers can be held personally liable under FEHA for their conduct. However, the employer is typically the primary target of litigation because they have the resources to pay damages and are strictly liable for harassment by supervisors." },
+    { "question": "How long do I have to file a sexual harassment claim in California?", "answer": "Under FEHA, you must first file a complaint with the California Civil Rights Department (CRD) within three years of the last incident of harassment. Once the CRD issues a right-to-sue notice, you generally have one year to file a lawsuit." }
+  ],
+  "whyHireText": "We approach sexual harassment cases with the sensitivity and discretion they demand while aggressively pursuing accountability from employers who allow harassment to occur. Our firm understands the emotional toll these cases take on victims and works to minimize additional stress while building the strongest possible case for maximum compensation.",
+  "contactUsText": "If you have experienced sexual harassment in the workplace, you have the right to a safe work environment. Contact The Azizi Firm for a free and completely confidential consultation. We represent survivors of workplace sexual harassment on a contingency basis — no fees unless we recover compensation for you."
+}

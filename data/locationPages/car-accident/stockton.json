@@ -1,0 +1,30 @@
+{
+  "city": "Stockton",
+  "citySlug": "stockton",
+  "county": "San Joaquin County",
+  "src": "/assets/images/car-accidents.png",
+  "introText": "If you've been injured in a car accident in Stockton, The Azizi Firm is here to help. Stockton's position as a major inland port and transportation hub means heavy commercial traffic and busy highways create significant accident risks. We represent victims of auto accidents, truck accidents, motorcycle accidents, and rideshare accidents. Our experienced car accident attorneys fight to get you maximum compensation for medical bills, lost wages, pain and suffering, and all other damages.",
+  "sections": [
+    {
+      "header": "Types of Car Accident Cases We Handle",
+      "body": "Our Stockton car accident lawyers handle all types of motor vehicle accidents: rear-end collisions on I-5 and SR-99, T-bone accidents at major intersections, head-on collisions on rural roads, hit and run accidents which have been a concern in Stockton, drunk driving accidents, distracted driving accidents, rideshare (Uber/Lyft) accidents, truck accidents involving port freight and agricultural transport, motorcycle accidents, pedestrian accidents, and bicycle accidents."
+    },
+    {
+      "header": "Common Causes of Car Accidents in Stockton",
+      "body": "Stockton's role as a key logistics center connecting the Port of Stockton to major highways like I-5, SR-99, SR-4, and I-205 creates heavy commercial truck traffic. Common causes include truck driver fatigue, distracted driving, speeding, drunk driving, aggressive driving at freeway interchanges, and accidents during fog conditions in the Delta region. Our attorneys investigate every accident to identify all liable parties and insurance coverage."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What should I do after a car accident in Stockton?",
+      "answer": "Call 911, seek medical attention, document the scene, exchange information with all involved drivers, get witness contacts, file a report with Stockton PD or CHP, and contact a car accident lawyer before speaking with insurance adjusters. If a commercial truck is involved, document the truck's DOT number and company information."
+    },
+    {
+      "question": "How much is my Stockton car accident case worth?",
+      "answer": "Case value depends on injury severity, medical costs, lost wages, pain and suffering, and available insurance coverage. Cases involving commercial trucks often involve higher policy limits. We offer free case evaluations."
+    }
+  ],
+  "whyHireText": "Our founder previously defended major insurance companies, giving us insider knowledge of how they evaluate and settle claims. We have experience with San Joaquin County courts and understand how to effectively present cases to Central Valley juries.",
+  "nearbyCities": ["Lodi", "Manteca", "Tracy", "Lathrop", "French Camp"],
+  "contactUsText": "If you've been injured in a car accident in Stockton, contact The Azizi Firm today for a free, confidential consultation. No fees unless we win."
+}

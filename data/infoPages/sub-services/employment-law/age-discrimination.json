@@ -1,0 +1,42 @@
+{
+  "pageTitle": "California Age Discrimination Lawyer",
+  "metaDescription": "California age discrimination attorney. Fired or demoted because of your age (40+)? Free consultation. We protect older workers from employment discrimination in California. Call (858) 829-3962.",
+  "src": "/assets/images/home-banner.jpg",
+  "imageHeader": "California <span>Age Discrimination</span> Lawyer",
+  "headerText": "Age Discrimination",
+  "topParagraph": "Age discrimination occurs when an employer treats an employee or job applicant who is 40 years or older unfavorably because of their age. In California, this type of discrimination is strictly prohibited under both state and federal law. Common examples include being passed over for promotion in favor of younger candidates, being targeted in layoffs, hearing age-related derogatory comments, or being forced into early retirement against your will.",
+  "definitionHeader": "What is Age Discrimination Under California Law?",
+  "definitionText": "Age discrimination in employment is the unfavorable treatment of an individual aged 40 or older based on their age. Under FEHA, it is illegal for an employer with five or more employees to discriminate in hiring, firing, compensation, job assignments, promotions, layoffs, training, or any other aspect of employment because of an employee's age. California law also prohibits mandatory retirement ages, with very limited exceptions for certain roles where age is a bona fide occupational qualification.",
+  "sections": [
+    {
+      "type": "text",
+      "header": "California Age Discrimination Protections",
+      "content": [
+        {
+          "header": "FEHA vs. Federal ADEA Protections",
+          "body": "California's FEHA provides broader protection than the federal Age Discrimination in Employment Act (ADEA). FEHA covers employers with 5+ employees (vs. 20 under the ADEA), allows for emotional distress and punitive damages (unavailable under the ADEA), and does not cap damages as the ADEA does."
+        },
+        {
+          "header": "Mandatory Retirement Prohibited",
+          "body": "California law generally prohibits mandatory retirement based on age. Employers cannot force an employee to retire or impose an age-based retirement policy. Limited exceptions exist only when age is a bona fide occupational qualification (BFOQ) — such as certain public safety positions — and the employer carries a heavy burden to justify the exception."
+        },
+        {
+          "header": "Age-Based Harassment and Hostile Work Environment",
+          "body": "Harassment based on age, such as frequent derogatory age-related comments, jokes, or slurs, can create a hostile work environment. The conduct must be severe or pervasive enough to create an abusive working atmosphere. Isolated comments may not be enough, but a pattern of age-based harassment can support a legal claim."
+        }
+      ]
+    }
+  ],
+  "stats": [
+    "Workers aged 55 and older face a significantly longer average period of unemployment after job loss compared to younger workers",
+    "The AARP reports that nearly 2 in 3 workers aged 45 and older have seen or experienced age discrimination in the workplace",
+    "FEHA's broader protections mean California employees can recover damages that would be unavailable under the federal ADEA"
+  ],
+  "faq": [
+    { "question": "Is it legal for my employer to say they want a 'younger, more energetic' workforce?", "answer": "Such statements can be strong evidence of age discrimination. While an employer might try to frame this as a performance issue, courts have consistently found that comments about 'new blood,' 'fresh energy,' or being 'overqualified' can support an age discrimination claim when accompanied by adverse employment actions." },
+    { "question": "What should I do if I was replaced by a younger worker?", "answer": "Document everything you can about your replacement — their approximate age, qualifications compared to yours, and any statements made about the change. Being replaced by a significantly younger worker (typically 10+ years younger) can be direct evidence of age discrimination. Consult an attorney as soon as possible." },
+    { "question": "Can my employer cut my pay or demote me because of my age?", "answer": "No. Demotions, pay cuts, or reassignments motivated by age are illegal under California law. If your employer claims the change was performance-based but you have a strong record, the timing and circumstances could support an age discrimination claim. Document your performance reviews and any age-related comments made by decision-makers." }
+  ],
+  "whyHireText": "We understand the challenges older workers face in today's job market and the subtle ways age discrimination manifests. Our firm has experience identifying patterns of age bias — from coded language in reviews to systematic replacement of older workers with younger, lower-paid employees. We fight to ensure that experience is valued, not penalized, in the California workplace.",
+  "contactUsText": "Experience should be an asset, not a liability. If your employer has discriminated against you because of your age, contact The Azizi Firm for a free consultation. We represent workers aged 40 and older throughout California on a contingency fee basis — no fees unless we recover for you."
+}

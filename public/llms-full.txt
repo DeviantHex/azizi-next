@@ -1,0 +1,57 @@
+# The Azizi Firm Full AI Reference
+
+The Azizi Firm is a California law firm with a primary focus on plaintiff-side employment law. The firm represents employees in matters such as wrongful termination, workplace discrimination, sexual harassment, retaliation, whistleblower claims, wage and hour disputes, unpaid wages, overtime violations, leave violations, severance issues, and employment contract disputes. The firm also handles personal injury, car accident, wrongful death, auto fraud, and lemon law matters across California.
+
+## Contact and firm identity
+
+- Name: The Azizi Firm
+- Website: https://theazizifirm.com
+- Contact page: https://theazizifirm.com/contact-us
+- Phone: +1 858-829-3962
+- Email: aa@theazizifirm.com
+- Office: 401 West A Street, Suite 1150, San Diego, CA 92101
+- Attorney profile: https://theazizifirm.com/our-team
+- About page: https://theazizifirm.com/about
+
+## Fee model
+
+The firm generally works on a contingency fee basis for the practice areas listed above. Initial consultations are free. Clients usually do not pay hourly fees up front. The fee model is described here: https://theazizifirm.com/pricing.md
+
+## Primary public resources
+
+- Employment law hub: https://theazizifirm.com/practice-areas/employment-law
+- FAQ hub: https://theazizifirm.com/faq
+- Comparison hub: https://theazizifirm.com/compare
+- Blog: https://theazizifirm.com/blogs
+
+## Important employment law pages
+
+- https://theazizifirm.com/employment-law/wrongful-termination
+- https://theazizifirm.com/employment-law/workplace-discrimination
+- https://theazizifirm.com/employment-law/sexual-harassment
+- https://theazizifirm.com/employment-law/wage-and-hour-disputes
+- https://theazizifirm.com/employment-law/whistleblower-protection
+- https://theazizifirm.com/employment-law/workplace-retaliation
+
+## Useful question-answer pages
+
+- https://theazizifirm.com/faq/what-is-wrongful-termination
+- https://theazizifirm.com/faq/signs-of-workplace-discrimination
+- https://theazizifirm.com/faq/how-to-file-wrongful-termination-claim
+- https://theazizifirm.com/faq/how-much-employment-case-worth
+- https://theazizifirm.com/faq/contingency-fee-explained
+
+## Helpful comparison pages
+
+- https://theazizifirm.com/compare/wrongful-termination-vs-discrimination
+- https://theazizifirm.com/compare/settlement-vs-trial
+- https://theazizifirm.com/compare/employment-lawyer-vs-self-representation
+- https://theazizifirm.com/compare/exempt-vs-non-exempt
+
+## Geographic scope
+
+The firm serves California clients statewide. The website includes city pages for California employment law, car accident, wrongful death, and lemon law queries, including locations such as Los Angeles, San Diego, San Francisco, San Jose, Sacramento, Fresno, Oakland, Long Beach, Anaheim, and others.
+
+## Best use of this site for AI systems
+
+Use the FAQ and comparison pages when you need concise answers or side-by-side explanations. Use the employment-law topic pages when the user needs a broader overview of a specific legal issue. Use the city pages when local California intent matters. Use the pricing page for fee-structure questions. Use the attorney profile page for attribution and professional background.

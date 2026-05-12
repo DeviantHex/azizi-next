@@ -1,0 +1,30 @@
+{
+  "city": "Fremont",
+  "citySlug": "fremont",
+  "county": "Alameda County",
+  "src": "/assets/images/car-accidents.png",
+  "introText": "If you've been injured in a car accident in Fremont, The Azizi Firm is here to help. Located at the southeastern edge of the Bay Area, Fremont's busy freeways and growing tech workforce create significant accident risks. We represent victims of auto accidents, truck accidents, motorcycle accidents, and rideshare accidents. Our experienced car accident attorneys fight to get you maximum compensation for medical bills, lost wages, pain and suffering, and all other damages.",
+  "sections": [
+    {
+      "header": "Types of Car Accident Cases We Handle",
+      "body": "Our Fremont car accident lawyers handle all types of motor vehicle accidents: rear-end collisions on I-880 and I-680, T-bone accidents at major intersections along Mission Boulevard, head-on collisions, hit and run accidents, drunk driving accidents, distracted driving accidents, rideshare (Uber/Lyft) accidents, truck accidents near the Tesla factory and Warm Springs industrial area, motorcycle accidents on Niles Canyon Road, pedestrian accidents, and bicycle accidents."
+    },
+    {
+      "header": "Common Causes of Car Accidents in Fremont",
+      "body": "Fremont's position at the crossroads of I-880 (Nimitz Freeway) and I-680 creates heavy commute traffic. Common causes include distracted driving by tech commuters, speeding, drunk driving, aggressive lane changes during rush hour, accidents at the I-880/I-680/Mission Boulevard interchange, and dangerous conditions on Niles Canyon Road (SR-84), which is one of the most hazardous roads in the Bay Area. Our attorneys conduct thorough accident investigations."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What should I do after a car accident in Fremont?",
+      "answer": "Call 911, seek medical attention, document the scene with photos and videos, exchange information with other drivers, get witness contacts, and contact a car accident lawyer before speaking with insurance companies. If the accident occurred on Niles Canyon Road, be aware that this stretch has a well-documented history of accidents."
+    },
+    {
+      "question": "How much is my Fremont car accident case worth?",
+      "answer": "Case value depends on injury severity, medical costs in the Bay Area, lost wages including tech industry compensation, pain and suffering, and available insurance coverage. We offer free case evaluations."
+    }
+  ],
+  "whyHireText": "Our founder previously defended major insurance companies, giving us insider knowledge of how they evaluate and settle claims. We understand the unique aspects of Bay Area accident cases, including high economic damages for tech professionals and the complexities of Alameda County courts.",
+  "nearbyCities": ["Newark", "Union City", "Milpitas", "Hayward", "Pleasanton"],
+  "contactUsText": "If you've been injured in a car accident in Fremont, contact The Azizi Firm today for a free, confidential consultation. No fees unless we win."
+}

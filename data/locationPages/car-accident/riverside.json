@@ -1,0 +1,30 @@
+{
+  "city": "Riverside",
+  "citySlug": "riverside",
+  "county": "Riverside County",
+  "src": "/assets/images/car-accidents.png",
+  "introText": "If you've been injured in a car accident in Riverside, The Azizi Firm is here to help. As the county seat and largest city in the Inland Empire region, Riverside's growing population and major transportation corridors create serious accident risks. We represent victims of auto accidents, truck accidents, motorcycle accidents, and rideshare accidents. Our experienced car accident attorneys fight to get you maximum compensation for medical bills, lost wages, pain and suffering, and all other damages.",
+  "sections": [
+    {
+      "header": "Types of Car Accident Cases We Handle",
+      "body": "Our Riverside car accident lawyers handle all types of motor vehicle accidents: rear-end collisions on the 91 and 60 freeways, T-bone accidents at major intersections, head-on collisions, hit and run accidents, drunk driving accidents, distracted driving accidents, rideshare (Uber/Lyft) accidents, truck accidents involving warehouse distribution traffic, motorcycle accidents on the winding roads near Box Springs Mountain, pedestrian accidents near UC Riverside, and bicycle accidents."
+    },
+    {
+      "header": "Common Causes of Car Accidents in Riverside",
+      "body": "Riverside sits at the junction of SR-91, I-215, and SR-60, making it a major logistics hub with heavy truck traffic. Common causes include aggressive driving during long Inland Empire commutes, speeding, distracted driving, truck driver fatigue from warehouse distribution routes, drunk driving, and high-speed collisions on wide arterial roads. Our attorneys investigate every accident to identify all liable parties and insurance coverage."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What should I do after a car accident in Riverside?",
+      "answer": "Call 911, seek medical attention, document the scene with photos and videos, exchange information with other drivers, get witness contacts, file a report with Riverside PD or CHP, and contact a car accident lawyer before speaking with insurance companies."
+    },
+    {
+      "question": "How much is my Riverside car accident case worth?",
+      "answer": "Case value depends on injury severity, medical costs, lost wages, pain and suffering, and available insurance coverage. Riverside County juries are generally reasonable and fair. We offer free case evaluations."
+    }
+  ],
+  "whyHireText": "Our founder previously defended major insurance companies, giving us insider knowledge of how they evaluate and settle claims. We understand the Inland Empire legal landscape and have extensive experience with Riverside County courts, ensuring maximum recovery for our clients.",
+  "nearbyCities": ["Moreno Valley", "Corona", "Jurupa Valley", "Norco", "Perris"],
+  "contactUsText": "If you've been injured in a car accident in Riverside, contact The Azizi Firm today for a free, confidential consultation. No fees unless we win."
+}

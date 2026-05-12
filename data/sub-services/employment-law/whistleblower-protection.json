@@ -1,0 +1,42 @@
+{
+  "pageTitle": "California Whistleblower Protection Attorney",
+  "metaDescription": "California whistleblower protection lawyer. Fired for reporting illegal conduct? Free consultation. We protect whistleblowers who expose fraud, safety violations, and unlawful practices. Call (858) 829-3962.",
+  "src": "/assets/images/employment-law.png",
+  "imageHeader": "California <span>Whistleblower Protection</span> Attorney",
+  "headerText": "Whistleblower Protection",
+  "topParagraph": "Whistleblowers play a vital role in exposing corporate fraud, safety violations, illegal activity, and government waste. California law provides robust protections for employees who report wrongdoing internally or to government agencies. If you have been retaliated against — demoted, terminated, or harassed — after blowing the whistle, you have legal rights under both California and federal law.",
+  "definitionHeader": "What is Whistleblower Protection Under California Law?",
+  "definitionText": "Whistleblower protection refers to the legal safeguards that prevent employers from retaliating against employees who report suspected violations of law, refuse to participate in illegal activities, cooperate with government investigations, or testify in legal proceedings. California Labor Code §1102.5 is one of the broadest whistleblower protection statutes in the nation, covering reports made internally to supervisors as well as external reports to government agencies.",
+  "sections": [
+    {
+      "type": "text",
+      "header": "California Whistleblower Laws",
+      "content": [
+        {
+          "header": "California Labor Code §1102.5",
+          "body": "This landmark statute prohibits employers from retaliating against employees who disclose suspected violations of state or federal law to a supervisor, a government agency, or a person with authority to investigate. It also protects employees who refuse to participate in activities that would violate the law and those who exercise their rights on behalf of a family member."
+        },
+        {
+          "header": "California False Claims Act",
+          "body": "The California False Claims Act allows whistleblowers (known as relators) to file lawsuits on behalf of the state against entities that defraud the government. Whistleblowers may receive between 15% and 33% of any recovery. The Act includes strong anti-retaliation protections for those who pursue qui tam actions."
+        },
+        {
+          "header": "Federal Whistleblower Protections",
+          "body": "Multiple federal statutes offer whistleblower protections, including the Sarbanes-Oxley Act for corporate fraud, the Dodd-Frank Act for securities violations (which can include monetary bounties), the False Claims Act for government fraud, and OSHA provisions for workplace safety complaints."
+        }
+      ]
+    }
+  ],
+  "stats": [
+    "The SEC whistleblower program has awarded over $1.9 billion in bounties since inception, with individual awards reaching tens of millions",
+    "California Labor Code §1102.5 is consistently among the most litigated employment statutes in the state",
+    "Whistleblower retaliation claims can result in reinstatement, back pay, double damages, and attorney's fees"
+  ],
+  "faq": [
+    { "question": "Do I need to report to the government to be protected as a whistleblower?", "answer": "No. Under California Labor Code §1102.5, you are protected even if you only report the suspected violation internally to your supervisor or employer. However, reporting to an appropriate government agency can provide additional protections under other statutes." },
+    { "question": "Can I remain anonymous as a whistleblower?", "answer": "Some whistleblower programs allow anonymous reporting, particularly under the SEC and False Claims Act programs (when filed through an attorney). However, anonymity can be lost if your identity is needed for the case to proceed. Internal reports to supervisors generally cannot remain anonymous." },
+    { "question": "What compensation can I receive in a whistleblower retaliation case?", "answer": "You may be entitled to reinstatement, back pay, front pay, emotional distress damages, punitive damages, and attorney's fees. Under certain programs like the SEC or False Claims Act, whistleblowers can also receive a percentage (typically 10-30%) of the government's recovery." }
+  ],
+  "whyHireText": "We understand the courage it takes to blow the whistle — and the retaliation that often follows. Our firm has experience navigating the complex intersection of California and federal whistleblower laws. We work to protect your rights, pursue maximum compensation, and help you hold wrongdoers accountable while safeguarding your career and reputation.",
+  "contactUsText": "If you were retaliated against for reporting illegal activity, you need experienced legal representation. Contact The Azizi Firm for a free, confidential consultation about your whistleblower claim. We handle cases on a contingency fee basis — no fees unless we recover for you."
+}

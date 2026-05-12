@@ -1,0 +1,94 @@
+{
+  "pageTitle": "Lemon Law vs Auto Fraud",
+  "metaDescription": "Compare California lemon law claims and auto fraud claims, including what each claim covers, who it targets, and when both may apply.",
+  "introText": "Consumers often know something is wrong with a vehicle purchase but are unsure whether the problem is a warranty defect, a deceptive sale, or both. California lemon law and auto fraud claims address different misconduct, and correctly identifying the problem is the first step toward the right remedy.",
+  "comparisons": [
+    {
+      "header": "Lemon Law",
+      "body": "Focuses on warranty-covered defects that substantially impair the use, value, or safety of the vehicle and were not repaired within a reasonable number of opportunities."
+    },
+    {
+      "header": "Auto Fraud",
+      "body": "Focuses on deception in the sales process, such as concealed damage, odometer issues, title problems, misrepresented condition, or false financing statements."
+    }
+  ],
+  "comparisonTableHeaders": {
+    "left": "Lemon Law",
+    "right": "Auto Fraud"
+  },
+  "comparisonTable": [
+    {
+      "topic": "Core problem",
+      "left": "The vehicle keeps malfunctioning under warranty.",
+      "right": "The seller lied, concealed facts, or manipulated the deal."
+    },
+    {
+      "topic": "Primary target",
+      "left": "Usually the manufacturer.",
+      "right": "Usually the dealer or seller involved in the transaction."
+    },
+    {
+      "topic": "Key records",
+      "left": "Repair orders, warranty history, out-of-service days, and manufacturer communications.",
+      "right": "Advertisements, purchase paperwork, title records, disclosures, inspection history, and financing documents."
+    },
+    {
+      "topic": "Potential remedy",
+      "left": "Buyback, replacement, or other manufacturer resolution.",
+      "right": "Rescission, damages, penalties, and other consumer-law remedies depending on the facts."
+    }
+  ],
+  "sections": [
+    {
+      "header": "When both claims may exist",
+      "body": "Some vehicle cases involve both tracks at the same time. For example, a dealer may hide prior damage or title issues, while the vehicle also suffers repeated warranty defects the manufacturer cannot fix. In that situation, lemon law and auto fraud theories can complement one another rather than compete."
+    },
+    {
+      "header": "Why claim selection matters",
+      "body": "The right legal theory determines who receives the demand, which documents matter most, and how the remedy is measured. A warranty defect case requires a different proof package than a deception-based sales case. Mislabeling the dispute can waste time and weaken leverage."
+    },
+    {
+      "header": "What consumers should gather immediately",
+      "body": "Keep the purchase contract, financing documents, repair invoices, text messages with the dealer, warranty booklet, service appointment logs, advertisements, and any disclosure forms. Vehicle cases are usually won or lost on paper before they are won or lost in argument."
+    }
+  ],
+  "decisionGuide": [
+    {
+      "useCase": "The vehicle has repeated repairs under warranty",
+      "recommendation": "Usually lemon law first",
+      "reason": "The core issue is the unresolved defect and the manufacturer's inability to fix it."
+    },
+    {
+      "useCase": "The seller hid prior damage or lied about the vehicle history",
+      "recommendation": "Usually auto fraud first",
+      "reason": "The key misconduct happened during the sale, not only in later repairs."
+    },
+    {
+      "useCase": "The vehicle was misrepresented and also keeps breaking down",
+      "recommendation": "Investigate both claims together",
+      "reason": "The facts may support both manufacturer liability and dealer liability."
+    }
+  ],
+  "bottomLine": "Lemon law addresses an unfixable warranted defect. Auto fraud addresses deception. If the vehicle problem started in the paperwork, disclosures, or sales pitch, think fraud. If it shows up in repeated repair attempts under warranty, think lemon law. Many strong cases involve both.",
+  "faq": [
+    {
+      "question": "Does lemon law apply to used cars?",
+      "answer": "It can, if the vehicle was sold or leased with qualifying warranty coverage and the defect substantially impairs use, value, or safety."
+    },
+    {
+      "question": "Can a dealer be liable even if the manufacturer also is?",
+      "answer": "Yes. A manufacturer defect claim and a dealer deception claim can target different wrongdoing by different parties."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "California Lemon Law",
+      "url": "/practice-areas/lemon-law"
+    },
+    {
+      "label": "California Auto Fraud",
+      "url": "/practice-areas/auto-fraud"
+    }
+  ],
+  "contactUsText": "Contact The Azizi Firm if you bought a problematic vehicle and need help deciding whether the facts point to a warranty defect claim, a dealer fraud claim, or both."
+}

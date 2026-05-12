@@ -1,0 +1,30 @@
+{
+  "city": "Chula Vista",
+  "citySlug": "chula-vista",
+  "county": "San Diego County",
+  "src": "/assets/images/car-accidents.png",
+  "introText": "If you've been injured in a car accident in Chula Vista, The Azizi Firm is here to help. As San Diego County's second-largest city, Chula Vista's rapid growth and proximity to the US-Mexico border create unique traffic patterns and accident risks. We represent victims of auto accidents, truck accidents, motorcycle accidents, and rideshare accidents. Our experienced car accident attorneys fight to get you maximum compensation for medical bills, lost wages, pain and suffering, and all other damages.",
+  "sections": [
+    {
+      "header": "Types of Car Accident Cases We Handle",
+      "body": "Our Chula Vista car accident lawyers handle all types of motor vehicle accidents: rear-end collisions on I-805 and SR-125, T-bone accidents at intersections along East H Street and Broadway, head-on collisions, hit and run accidents, drunk driving accidents, distracted driving accidents, rideshare (Uber/Lyft) accidents, truck accidents on I-5, motorcycle accidents, pedestrian accidents, and bicycle accidents throughout the Otay Ranch and Eastlake neighborhoods."
+    },
+    {
+      "header": "Common Causes of Car Accidents in Chula Vista",
+      "body": "Chula Vista's location near the San Ysidro border crossing and its rapid suburban expansion create specific accident risks on I-805, I-5, and SR-125 toll road. Common causes include distracted driving, speeding on wide suburban arterials, DUI driving, aggressive driving during border-area traffic congestion, and accidents at complex intersections along East Palomar Street and Otay Lakes Road. Our attorneys investigate every accident to identify all liable parties."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What should I do after a car accident in Chula Vista?",
+      "answer": "Call 911, seek medical attention, document the scene thoroughly, exchange information with all drivers, get witness contacts, file a report with Chula Vista PD or CHP, and contact a car accident lawyer before speaking with insurance companies. If an accident involves a driver from Mexico, cross-border legal issues may arise."
+    },
+    {
+      "question": "How much is my Chula Vista car accident case worth?",
+      "answer": "Case value depends on injury severity, medical costs, lost wages, pain and suffering, and available insurance coverage. Cross-border accidents may involve Mexican insurance policies, which have different coverage limits and requirements. We offer free case evaluations."
+    }
+  ],
+  "whyHireText": "Our founder previously defended major insurance companies, giving us insider knowledge of how they evaluate and settle claims. We understand the unique legal complexities of South Bay cases, including cross-border insurance issues and San Diego County courts.",
+  "nearbyCities": ["National City", "Imperial Beach", "San Diego", "Bonita", "San Ysidro"],
+  "contactUsText": "If you've been injured in a car accident in Chula Vista, contact The Azizi Firm today for a free, confidential consultation. No fees unless we win."
+}

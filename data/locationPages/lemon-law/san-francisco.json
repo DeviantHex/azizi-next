@@ -1,0 +1,18 @@
+{
+  "city": "San Francisco",
+  "citySlug": "san-francisco",
+  "county": "San Francisco County",
+  "src": "/assets/images/lemon-law.png",
+  "introText": "If you've purchased a defective vehicle in San Francisco that the manufacturer can't fix after multiple repair attempts, you may have a lemon law claim. The Azizi Firm helps California consumers get refunds or replacement vehicles under the Song-Beverly Consumer Warranty Act.",
+  "sections": [
+    { "header": "California Lemon Law Cases We Handle", "body": "Our San Francisco lemon law attorneys handle cases involving cars, trucks, SUVs, and motorcycles with repeated mechanical issues, safety defects, electrical problems, transmission failures, and engine defects." },
+    { "header": "What Qualifies as a Lemon in California?", "body": "Under the Song-Beverly Act, a vehicle may qualify as a lemon if it has a substantial defect covered by warranty that the manufacturer cannot repair after a reasonable number of attempts." }
+  ],
+  "faq": [
+    { "question": "How many repair attempts are needed?", "answer": "Generally, two or more repair attempts for a serious safety defect, or four or more attempts for a substantial non-safety defect. The vehicle may also qualify if it has been out of service for 30+ cumulative days." },
+    { "question": "What can I recover in a lemon law case?", "answer": "You may recover a refund of your purchase price (minus a mileage offset) or a replacement vehicle. The manufacturer may also be required to pay your attorney fees." }
+  ],
+  "whyHireText": "California's lemon law requires manufacturers to pay your attorney fees if you win. We handle cases on contingency with no upfront cost to you.",
+  "nearbyCities": ["Oakland", "Daly City", "Berkeley"],
+  "contactUsText": "Contact The Azizi Firm for a free lemon law case evaluation. No fees unless we win."
+}

@@ -1,0 +1,26 @@
+{
+  "city": "Stockton",
+  "citySlug": "stockton",
+  "county": "San Joaquin County",
+  "population": "320,000",
+  "src": "/assets/images/employment-law.png",
+  "introText": "If you work in Stockton and have been wrongfully terminated, discriminated against, harassed, or denied fair wages, The Azizi Firm is here to help. As a California employment law firm, we represent workers throughout San Joaquin County against employers of all sizes - from logistics and warehousing companies to healthcare systems and agricultural processors.",
+  "localInfo": "Stockton is a major logistics and transportation hub in the Central Valley, with key industries in warehousing, distribution, agriculture, and healthcare. The Port of Stockton serves as a major inland port. The California DLSE Stockton office handles employment claims from San Joaquin County workers. The San Joaquin County Superior Court in downtown Stockton hears employment law cases including wrongful termination, discrimination, harassment, and wage disputes.",
+  "sections": [
+    {
+      "header": "Employment Law Cases We Handle in Stockton",
+      "body": "Our Stockton employment attorneys handle: wrongful termination, workplace discrimination (race, gender, age, disability, sexual orientation), sexual harassment, hostile work environment, whistleblower retaliation, wage and hour violations (unpaid wages, overtime, meal/rest breaks), employee misclassification, FMLA/CFRA violations, and employment contract disputes."
+    },
+    {
+      "header": "California Employment Laws That Protect Stockton Workers",
+      "body": "The California Fair Employment and Housing Act (FEHA) provides stronger protections than federal law. California Labor Code sections 1102.5, 98.6, and 6310 protect whistleblowers. The California Family Rights Act (CFRA) provides job-protected leave. Our firm knows how to leverage these laws to maximize your recovery."
+    }
+  ],
+  "faq": [
+    { "question": "How long do I have to file an employment claim in California?", "answer": "Statute of limitations vary by claim type. For FEHA discrimination claims, you must first file with the California Civil Rights Department (CRD) within three years. For wrongful termination claims, you generally have two years. For wage claims, you generally have three years. Contact us immediately to ensure your claim is timely filed." },
+    { "question": "What compensation can I recover in an employment law case?", "answer": "You may be entitled to lost wages (back pay and front pay), emotional distress damages, punitive damages, attorney fees, reinstatement, and other remedies. The value depends on your specific situation - call us for a free evaluation." }
+  ],
+  "whyHireText": "We understand California employment law and have experience litigating against large employers. Our firm's founder previously defended major insurance companies, giving us insider knowledge of how defendants approach employment cases. We leverage this experience to fight for maximum compensation for our clients.",
+  "nearbyCities": ["Lodi", "Manteca", "Tracy", "Lathrop", "Modesto"],
+  "contactUsText": "If you're facing a workplace issue in Stockton, contact The Azizi Firm today for a free, confidential consultation. We serve employees throughout San Joaquin County and all of California."
+}

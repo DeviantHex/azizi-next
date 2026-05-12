@@ -1,0 +1,84 @@
+# The Azizi Firm
+
+> California employment law firm serving clients statewide. Primary focus: wrongful termination, discrimination, harassment, retaliation, and wage disputes. Also handles personal injury, car accident, wrongful death, auto fraud, and lemon law matters. Free consultation. No fee unless we win.
+
+## Firm Overview
+- Website: https://theazizifirm.com
+- Contact: https://theazizifirm.com/contact-us
+- Phone: +1 858-829-3962
+- Email: aa@theazizifirm.com
+- Office: 401 West A Street, Suite 1150, San Diego, CA 92101
+- Pricing / fee model: https://theazizifirm.com/pricing.md
+- Extended AI reference: https://theazizifirm.com/llms-full.txt
+
+## Core Practice Areas
+- Employment Law: https://theazizifirm.com/practice-areas/employment-law
+- Personal Injury: https://theazizifirm.com/practice-areas/personal-injury
+- Lemon Law: https://theazizifirm.com/practice-areas/lemon-law
+- Auto Fraud: https://theazizifirm.com/practice-areas/auto-fraud
+
+## Key Employment Law Pages
+- Wrongful Termination: https://theazizifirm.com/employment-law/wrongful-termination
+- Workplace Discrimination: https://theazizifirm.com/employment-law/workplace-discrimination
+- Sexual Harassment: https://theazizifirm.com/employment-law/sexual-harassment
+- Wage and Hour Disputes: https://theazizifirm.com/employment-law/wage-and-hour-disputes
+- Whistleblower Protection: https://theazizifirm.com/employment-law/whistleblower-protection
+- Workplace Retaliation: https://theazizifirm.com/employment-law/workplace-retaliation
+- Hostile Work Environment: https://theazizifirm.com/employment-law/hostile-work-environment
+- Pregnancy Discrimination: https://theazizifirm.com/employment-law/pregnancy-discrimination
+- Racial Discrimination: https://theazizifirm.com/employment-law/racial-discrimination
+- Age Discrimination: https://theazizifirm.com/employment-law/age-discrimination
+- Disability Discrimination: https://theazizifirm.com/employment-law/disability-discrimination
+- Gender Discrimination: https://theazizifirm.com/employment-law/gender-discrimination
+- Religious Discrimination: https://theazizifirm.com/employment-law/religious-discrimination
+- Unpaid Wages: https://theazizifirm.com/employment-law/unpaid-wages
+- Overtime Violations: https://theazizifirm.com/employment-law/overtime-violations
+- Employee Misclassification: https://theazizifirm.com/employment-law/misclassification
+- Constructive Discharge: https://theazizifirm.com/employment-law/wrongful-constructive-discharge
+- Employment Contract Disputes: https://theazizifirm.com/employment-law/breach-of-employment-contract
+- Family and Medical Leave: https://theazizifirm.com/employment-law/family-medical-leave
+- Severance Agreements: https://theazizifirm.com/employment-law/severance-agreements
+- Non-Compete Agreements: https://theazizifirm.com/employment-law/non-compete-agreements
+
+## Helpful Hubs
+- FAQ Hub: https://theazizifirm.com/faq
+- Comparison Hub: https://theazizifirm.com/compare
+- Blog: https://theazizifirm.com/blogs
+- About: https://theazizifirm.com/about
+- Attorney Profile: https://theazizifirm.com/our-team
+
+## Frequently Asked Questions
+- What Is Wrongful Termination in California?: https://theazizifirm.com/faq/what-is-wrongful-termination
+- Signs of Workplace Discrimination in California: https://theazizifirm.com/faq/signs-of-workplace-discrimination
+- How to File a Wrongful Termination Claim in California: https://theazizifirm.com/faq/how-to-file-wrongful-termination-claim
+- California At-Will Employment: https://theazizifirm.com/faq/california-at-will-employment
+- How Much Is My Employment Case Worth?: https://theazizifirm.com/faq/how-much-employment-case-worth
+- California Wage Theft: https://theazizifirm.com/faq/california-wage-theft
+- How Long Does an Employment Case Take?: https://theazizifirm.com/faq/how-long-employment-case-takes
+- Can I Sue My Employer for Discrimination?: https://theazizifirm.com/faq/can-i-sue-for-discrimination
+- Personal Injury Timeline: https://theazizifirm.com/faq/personal-injury-timeline
+- Lemon Law Requirements: https://theazizifirm.com/faq/lemon-law-requirements
+- Auto Fraud Consumer Rights: https://theazizifirm.com/faq/auto-fraud-consumer-rights
+- Contingency Fees Explained: https://theazizifirm.com/faq/contingency-fee-explained
+
+## Comparison Pages
+- Wrongful Termination vs Workplace Discrimination: https://theazizifirm.com/compare/wrongful-termination-vs-discrimination
+- Employment Lawyer vs Self-Representation: https://theazizifirm.com/compare/employment-lawyer-vs-self-representation
+- Settlement vs Trial in Employment Cases: https://theazizifirm.com/compare/settlement-vs-trial
+- Exempt vs Non-Exempt Employees: https://theazizifirm.com/compare/exempt-vs-non-exempt
+- At-Will Employment vs Contract Employment: https://theazizifirm.com/compare/at-will-vs-contract-employment
+- Personal Injury vs Workers' Compensation: https://theazizifirm.com/compare/personal-injury-vs-workers-comp
+- Lemon Law vs Auto Fraud: https://theazizifirm.com/compare/lemon-law-vs-auto-fraud
+
+## Location Coverage Examples
+- Los Angeles Employment Lawyer: https://theazizifirm.com/employment-lawyer/los-angeles
+- San Diego Employment Lawyer: https://theazizifirm.com/employment-lawyer/san-diego
+- San Francisco Employment Lawyer: https://theazizifirm.com/employment-lawyer/san-francisco
+- San Jose Employment Lawyer: https://theazizifirm.com/employment-lawyer/san-jose
+- Sacramento Employment Lawyer: https://theazizifirm.com/employment-lawyer/sacramento
+- Los Angeles Car Accident Lawyer: https://theazizifirm.com/car-accident-lawyer/los-angeles
+- San Diego Car Accident Lawyer: https://theazizifirm.com/car-accident-lawyer/san-diego
+- Los Angeles Wrongful Death Attorney: https://theazizifirm.com/wrongful-death-attorney/los-angeles
+- San Diego Wrongful Death Attorney: https://theazizifirm.com/wrongful-death-attorney/san-diego
+- Los Angeles Lemon Law Attorney: https://theazizifirm.com/lemon-law-attorney/los-angeles
+- San Diego Lemon Law Attorney: https://theazizifirm.com/lemon-law-attorney/san-diego

@@ -1,0 +1,42 @@
+{
+  "pageTitle": "California Wrongful Termination Lawyer",
+  "metaDescription": "California wrongful termination lawyer. Fired illegally? Free consultation. We fight for employees wrongfully terminated in violation of California law. No fees unless we win. Call (858) 829-3962.",
+  "src": "/assets/images/home-banner.jpg",
+  "imageHeader": "California <span>Wrongful Termination</span> Lawyer",
+  "headerText": "Wrongful Termination",
+  "topParagraph": "Wrongful termination occurs when an employer fires an employee for an illegal reason. Under California law, most employment is at-will, meaning an employer can terminate employment at any time for any reason — but there are important exceptions. If you were fired because of discrimination, retaliation, or in violation of public policy, you may have a wrongful termination claim.",
+  "definitionHeader": "What is Wrongful Termination in California?",
+  "definitionText": "Wrongful termination is when an employer fires an employee for reasons that violate California law or public policy. This includes termination based on discrimination, retaliation for whistleblowing or reporting illegal conduct, refusal to engage in illegal activity, taking protected leave under CFRA or FMLA, and breach of an employment contract.",
+  "sections": [
+    {
+      "type": "text",
+      "header": "California Wrongful Termination Laws",
+      "content": [
+        {
+          "header": "California Fair Employment and Housing Act (FEHA)",
+          "body": "FEHA prohibits employers with 5 or more employees from terminating workers based on protected characteristics including race, gender, age (40+), disability, sexual orientation, religion, pregnancy, and more."
+        },
+        {
+          "header": "California Labor Code §1102.5 — Whistleblower Protection",
+          "body": "California law prohibits employers from retaliating against employees who report suspected violations of state or federal law. If you were fired after blowing the whistle, you may have a claim."
+        },
+        {
+          "header": "Public Policy Exception",
+          "body": "Even at-will employees cannot be fired for reasons that violate fundamental public policy. This includes refusing to commit illegal acts, exercising legal rights like filing a workers' comp claim, or performing jury duty."
+        }
+      ]
+    }
+  ],
+  "stats": [
+    "The EEOC received over 5,000 wrongful termination-related charges from California in 2024",
+    "California FEHA claims can result in damages including back pay, front pay, emotional distress, and punitive damages",
+    "The median settlement for wrongful termination cases in California ranges from $40,000 to $250,000+"
+  ],
+  "faq": [
+    { "question": "What are signs of wrongful termination?", "answer": "Signs include being fired shortly after reporting discrimination, being terminated right after taking medical leave, being told you were fired for a protected reason (age, gender, race), or being replaced by someone outside your protected class." },
+    { "question": "How much is my wrongful termination case worth?", "answer": "Case value depends on lost wages, emotional distress, whether the employer's conduct was malicious, and other factors. We evaluate each case individually during a free consultation." },
+    { "question": "How long do I have to file a wrongful termination claim?", "answer": "Deadlines vary. FEHA claims must be filed with the CRD within three years. Common law claims generally have a two-year statute of limitations. Act quickly to preserve your rights." }
+  ],
+  "whyHireText": "We have extensive experience handling California wrongful termination cases against employers of all sizes. Our founder's background in insurance defense gives us unique insight into how employers and their insurers evaluate and defend these cases. We use this knowledge to build strong cases and maximize recovery for our clients.",
+  "contactUsText": "If you believe you were wrongfully terminated, contact The Azizi Firm for a free, confidential consultation. We represent employees throughout California on a contingency fee basis — no fees unless we win."
+}

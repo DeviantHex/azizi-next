@@ -1,0 +1,94 @@
+{
+  "pageTitle": "Wrongful Termination vs Workplace Discrimination",
+  "metaDescription": "Understand the difference between wrongful termination and workplace discrimination under California law, including when a case may involve both claims.",
+  "introText": "Wrongful termination and workplace discrimination are closely related, but they are not the same claim. One focuses on an unlawful firing. The other focuses on adverse treatment because of a protected characteristic, which may happen before a firing, after a complaint, or even without termination at all.",
+  "comparisons": [
+    {
+      "header": "Wrongful Termination",
+      "body": "Centers on the ending of employment. The core question is whether the firing itself violated California law, public policy, or an employment agreement."
+    },
+    {
+      "header": "Workplace Discrimination",
+      "body": "Centers on unequal treatment because of a protected characteristic. The employer may discriminate through discipline, pay, promotion, scheduling, leave decisions, or termination."
+    }
+  ],
+  "comparisonTableHeaders": {
+    "left": "Wrongful Termination",
+    "right": "Workplace Discrimination"
+  },
+  "comparisonTable": [
+    {
+      "topic": "Main issue",
+      "left": "You were fired for an unlawful reason.",
+      "right": "You were treated adversely because of race, sex, age, disability, pregnancy, religion, or another protected status."
+    },
+    {
+      "topic": "Can it happen without a firing?",
+      "left": "Usually no. The claim is tied to termination.",
+      "right": "Yes. Demotion, pay disparity, discipline, harassment, or failure to promote may qualify."
+    },
+    {
+      "topic": "Common overlap",
+      "left": "A discriminatory firing can support the termination claim.",
+      "right": "The same firing may also be part of a broader discrimination pattern."
+    },
+    {
+      "topic": "Key evidence",
+      "left": "Termination timing, stated reason, comparator evidence, and pretext documents.",
+      "right": "Bias indicators, unequal treatment, HR complaints, comparative discipline, and employer explanations."
+    }
+  ],
+  "sections": [
+    {
+      "header": "When a case includes both claims",
+      "body": "Many California employment cases involve both theories. For example, an employee may report discriminatory treatment for months and then be fired after pushing back, requesting accommodation, or filing a complaint. In that scenario, the firing may support a wrongful termination claim while the earlier adverse treatment supports discrimination and retaliation claims."
+    },
+    {
+      "header": "Why the distinction matters",
+      "body": "The difference affects how a case is investigated, what facts matter most, and how settlement value is framed. A case limited to termination may focus heavily on the employer's stated reason for firing. A broader discrimination case may require a longer timeline showing patterns, comparators, promotions denied, or inconsistent discipline."
+    },
+    {
+      "header": "How California employees should evaluate the facts",
+      "body": "Ask whether the problem was only the firing, or whether the firing capped off a longer period of unequal treatment. Emails, performance reviews, accommodation requests, witness statements, and HR complaints often help show whether the case is really about one discrete decision or a wider discriminatory course of conduct."
+    }
+  ],
+  "decisionGuide": [
+    {
+      "useCase": "You were fired after complaining about bias",
+      "recommendation": "Often both claims",
+      "reason": "The firing may be wrongful, and the earlier unequal treatment can support discrimination and retaliation theories."
+    },
+    {
+      "useCase": "You are still employed but being demoted or excluded",
+      "recommendation": "Usually discrimination first",
+      "reason": "Termination is not required for a discrimination claim when the employer is taking other adverse action."
+    },
+    {
+      "useCase": "The only unlawful event was the firing itself",
+      "recommendation": "Often wrongful termination",
+      "reason": "The case may still involve protected activity or public-policy issues even if the employee did not experience a longer discrimination pattern."
+    }
+  ],
+  "bottomLine": "If the unlawful conduct ended with a firing, there is a strong chance the case should be analyzed under more than one theory. The best strategy is usually to identify every protected category, complaint history, and employer explanation before deciding how to frame the claim.",
+  "faq": [
+    {
+      "question": "Can I sue for both wrongful termination and discrimination?",
+      "answer": "Yes. If you were fired because of a protected characteristic or after complaining about discrimination, California law may support both claims."
+    },
+    {
+      "question": "Do I need direct evidence of bias?",
+      "answer": "Not always. Many strong cases are proven through timing, comparator evidence, inconsistent explanations, and a record showing the employer's stated reason was pretextual."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "California Wrongful Termination Lawyer",
+      "url": "/employment-law/wrongful-termination"
+    },
+    {
+      "label": "California Workplace Discrimination Attorney",
+      "url": "/employment-law/workplace-discrimination"
+    }
+  ],
+  "contactUsText": "Contact The Azizi Firm for a free consultation if you were fired after complaining about discrimination or if your termination appears tied to bias, retaliation, or another unlawful reason."
+}

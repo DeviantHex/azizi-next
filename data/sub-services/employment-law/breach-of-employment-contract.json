@@ -1,0 +1,42 @@
+{
+  "pageTitle": "California Breach of Employment Contract Lawyer",
+  "metaDescription": "California breach of employment contract attorney. Employer violated your contract? Free consultation. We enforce employment agreements and fight for what you are owed. Call (858) 829-3962.",
+  "src": "/assets/images/employment-law.png",
+  "imageHeader": "California <span>Breach of Employment Contract</span> Lawyer",
+  "headerText": "Breach of Employment Contract",
+  "topParagraph": "While most California employment is at-will, many employees have written employment contracts, offer letters, or implied agreements that create binding obligations on the employer. When an employer breaches these agreements — by failing to pay promised compensation, terminating without cause when a contract requires it, or violating specific terms — the employee may have a breach of contract claim. These cases are distinct from statutory claims and can provide powerful remedies.",
+  "definitionHeader": "What is a Breach of Employment Contract?",
+  "definitionText": "A breach of employment contract occurs when an employer fails to fulfill obligations set forth in an employment agreement. This can involve an express written contract, an implied contract (based on employer policies, handbooks, or oral promises), or an implied covenant of good faith and fair dealing. Common breaches include termination without cause when the contract requires it, failure to pay severance or bonuses as promised, or violation of restrictive covenants.",
+  "sections": [
+    {
+      "type": "text",
+      "header": "California Employment Contract Law",
+      "content": [
+        {
+          "header": "Express Written Contracts",
+          "body": "An express employment contract specifies the terms of employment in writing — including duration, compensation, benefits, grounds for termination, and severance obligations. If an employer violates any material term, the employee may sue for breach of contract and recover damages measured by the value of what was promised but not received."
+        },
+        {
+          "header": "Implied Contracts and the Covenant of Good Faith",
+          "body": "Even without a formal written contract, implied contracts can arise from employer policies, handbooks, and oral assurances. For example, if an employee handbook promises that employees will only be terminated for cause, a court may find an implied contract overcame the at-will presumption. Additionally, every contract in California contains an implied covenant of good faith and fair dealing."
+        },
+        {
+          "header": "Remedies for Breach of Contract",
+          "body": "Damages for breach of an employment contract typically include the compensation and benefits the employee would have received had the contract been honored. This can include lost wages, bonuses, stock options, commissions, and benefits. In some cases, the employee may also recover attorney's fees if the contract so provides."
+        }
+      ]
+    }
+  ],
+  "stats": [
+    "Executive and professional employment contracts frequently include severance provisions worth months or even years of salary",
+    "California courts have recognized implied contracts based on employee handbook provisions and longevity of service",
+    "The statute of limitations for breach of a written contract in California is four years, while the limit for oral contracts is two years"
+  ],
+  "faq": [
+    { "question": "I thought California was an at-will state. Does that mean I have no contract rights?", "answer": "At-will employment is the default rule, but it can be overcome by an express or implied contract. If you have a written employment agreement, an offer letter with specific terms, or an employee handbook that limits termination to cause, you may have enforceable contractual rights. At-will employment is a presumption, not an absolute bar." },
+    { "question": "What if my employer promised me a bonus but never paid it?", "answer": "If the bonus was promised — whether in a contract, offer letter, or company policy — and you performed the required work to earn it, the bonus may be considered wages that are owed to you. Discretionary bonuses are harder to enforce, but promised bonuses tied to specific performance metrics are often enforceable." },
+    { "question": "Can I sue for breach of contract and wrongful termination at the same time?", "answer": "Yes. Breach of contract and wrongful termination are separate legal claims that can be brought in the same lawsuit. For example, if your employer terminated you in violation of both an anti-discrimination statute and your employment contract, you can assert both claims simultaneously to maximize your recovery." }
+  ],
+  "whyHireText": "Our firm has extensive experience litigating breach of employment contract cases, from executive compensation disputes to implied contract claims arising from employee handbooks. We understand how to interpret contract language, identify implied terms, and calculate the full scope of damages. Our background in insurance defense gives us unique insight into how employers evaluate contract disputes and their settlement value.",
+  "contactUsText": "If your employer has violated your employment contract or failed to honor promises made to you, you deserve to be made whole. Contact The Azizi Firm for a free consultation about your breach of contract claim. We handle these cases on a contingency fee basis — no fees unless we recover your compensation."
+}

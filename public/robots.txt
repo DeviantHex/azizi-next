@@ -1,0 +1,26 @@
+# robots.txt for theazizifirm.com
+# Search, citation, and answer-engine bots are allowed.
+# Common Crawl is disallowed to reduce broad training reuse while preserving search access.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://theazizifirm.com/sitemap.xml

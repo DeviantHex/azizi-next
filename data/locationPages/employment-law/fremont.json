@@ -1,0 +1,26 @@
+{
+  "city": "Fremont",
+  "citySlug": "fremont",
+  "county": "Alameda County",
+  "population": "226,000",
+  "src": "/assets/images/employment-law.png",
+  "introText": "If you work in Fremont and have been wrongfully terminated, discriminated against, harassed, or denied fair wages, The Azizi Firm is here to help. As a California employment law firm, we represent workers throughout Alameda County against employers of all sizes - from electric vehicle manufacturers and semiconductor companies to healthcare providers and biotechnology firms.",
+  "localInfo": "Fremont is a major hub for advanced manufacturing in the Bay Area, home to the Tesla factory and numerous technology and biotech companies. The city sits at the intersection of Silicon Valley and the East Bay manufacturing corridor. The EEOC San Francisco District Office and California DLSE Oakland office handle employment claims from East Bay workers. The Alameda County Superior Court Fremont Hall of Justice hears employment law cases including wrongful termination, discrimination, harassment, and wage disputes.",
+  "sections": [
+    {
+      "header": "Employment Law Cases We Handle in Fremont",
+      "body": "Our Fremont employment attorneys handle: wrongful termination, workplace discrimination (race, gender, age, disability, sexual orientation), sexual harassment, hostile work environment, whistleblower retaliation, wage and hour violations (unpaid wages, overtime, meal/rest breaks), employee misclassification, FMLA/CFRA violations, and employment contract disputes."
+    },
+    {
+      "header": "California Employment Laws That Protect Fremont Workers",
+      "body": "The California Fair Employment and Housing Act (FEHA) provides stronger protections than federal law. California Labor Code sections 1102.5, 98.6, and 6310 protect whistleblowers. The California Family Rights Act (CFRA) provides job-protected leave. Manufacturing and tech workers have specific wage and hour protections that our firm knows how to leverage."
+    }
+  ],
+  "faq": [
+    { "question": "How long do I have to file an employment claim in California?", "answer": "Statute of limitations vary by claim type. For FEHA discrimination claims, you must first file with the California Civil Rights Department (CRD) within three years. For wrongful termination claims, you generally have two years. For wage claims, you generally have three years. Contact us immediately to ensure your claim is timely filed." },
+    { "question": "What compensation can I recover in an employment law case?", "answer": "You may be entitled to lost wages (back pay and front pay), emotional distress damages, punitive damages, attorney fees, reinstatement, and other remedies. The value depends on your specific situation - call us for a free evaluation." }
+  ],
+  "whyHireText": "We understand California employment law and have experience litigating against large employers. Our firm's founder previously defended major insurance companies, giving us insider knowledge of how defendants approach employment cases. We leverage this experience to fight for maximum compensation for our clients.",
+  "nearbyCities": ["Newark", "Union City", "Milpitas", "Hayward", "Pleasanton"],
+  "contactUsText": "If you're facing a workplace issue in Fremont, contact The Azizi Firm today for a free, confidential consultation. We serve employees throughout Alameda County and all of California."
+}

@@ -16,14 +16,14 @@
       <VContainer class="header">
         <div class="logo-container">
           <img
-            v-if="smAndDown || !isHome"
+            v-show="smAndDown || !isHome"
             class="logo"
             alt="The Azizi Firm Logo"
             src="/assets/images/header-logo.svg"
             @click="navigateTo('/')"
           />
           <img
-            v-else
+            v-show="!smAndDown && isHome"
             class="logo"
             alt="The Azizi Firm Logo"
             src="/assets/images/logo-white.svg"
@@ -31,7 +31,7 @@
           />
         </div>
 
-        <div v-if="!smAndDown" class="nav-btns">
+        <div class="nav-btns" :class="{ 'is-mobile': smAndDown }" :aria-hidden="smAndDown">
           <VBtn
             v-for="r in navRoutes"
             :key="r.path || r.name"
@@ -64,7 +64,7 @@
 
         <div class="cta-btn-container">
           <VBtn
-            v-if="!smAndDown"
+            v-show="!smAndDown"
             class="cta-btn"
             color="secondary"
             size="large"
@@ -74,7 +74,7 @@
           >
             +1 858-829-3962
           </VBtn>
-          <div v-else class="mobile-btns">
+          <div v-show="smAndDown" class="mobile-btns">
             <VBtn :icon="mdiPhone" variant="outlined" size="small" href="tel:+18588293962" />
             <VBtn
               icon
@@ -90,7 +90,7 @@
       </VContainer>
     </VAppBar>
 
-    <VNavigationDrawer v-if="smAndDown" v-model="navOpen" sticky location="top">
+    <VNavigationDrawer v-model="navOpen" sticky location="top" temporary class="mobile-drawer">
       <VList>
         <VWindow v-model="mobileNavTab">
           <VWindowItem>
@@ -172,7 +172,7 @@
               <NuxtLink :to="{ name: 'privacy-policy' }" class="text-secondary">Privacy Policy</NuxtLink>
             </div>
           </div>
-          <img v-if="!smAndDown" alt="The Azizi Firm Logo" class="logo" src="/assets/images/header-logo.svg" />
+          <img v-show="!smAndDown" alt="The Azizi Firm Logo" class="logo" src="/assets/images/header-logo.svg" />
         </div>
       </VContainer>
     </VFooter>
@@ -322,6 +322,14 @@ useHead({
   flex: 1;
   display: flex;
   flex-direction: column;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: rgb(var(--v-theme-primary));
+  }
 }
 .v-list-item { font-weight: 450; }
 .header {
@@ -329,11 +337,28 @@ useHead({
   padding: 16px 4px;
   width: 100%;
   align-items: center;
-  .logo-container { flex: 1; .logo { width: 120px; cursor: pointer; } }
+  .logo-container {
+    flex: 1;
+
+    .logo {
+      width: 120px;
+      cursor: pointer;
+      transition: opacity 180ms ease, transform 180ms ease;
+
+      &:hover {
+        opacity: 0.88;
+        transform: translate3d(0, -1px, 0);
+      }
+    }
+  }
   .nav-btns {
     margin: auto;
     display: flex;
     gap: 4px;
+
+    &.is-mobile {
+      display: none;
+    }
   }
   .cta-btn-container {
     flex: 1;
@@ -378,4 +403,23 @@ useHead({
     }
   }
 
+.mobile-drawer {
+  display: none;
+}
+
+@media (max-width: 959px) {
+  .mobile-drawer {
+    display: block;
+  }
+
+  .header {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .footer .bottom-section {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
 </style>

@@ -9,7 +9,10 @@ export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
   const resp: any = await $fetch('https://www.google.com/recaptcha/api/siteverify', {
     method: 'POST',
-    body: `secret=${config.recaptchaSecretKey}&response=${token}`,
+    body: new URLSearchParams({
+      secret: config.recaptchaSecretKey,
+      response: token || '',
+    }).toString(),
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
   })
   if (!resp.success) {
@@ -20,12 +23,16 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 400, statusMessage: 'Missing required fields' })
   }
 
-  if (name.trim().length < 2) {
+  const cleanName = String(name).trim().slice(0, 120)
+  const cleanEmail = String(email).trim().slice(0, 254)
+  const cleanDescription = String(caseDescription || '').trim().slice(0, 4000)
+
+  if (cleanName.length < 2) {
     throw createError({ statusCode: 400, statusMessage: 'Name is too short' })
   }
 
   const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-  if (!emailRegex.test(email.toLowerCase())) {
+  if (!emailRegex.test(cleanEmail.toLowerCase())) {
     throw createError({ statusCode: 400, statusMessage: 'Invalid email' })
   }
 
@@ -37,16 +44,16 @@ export default defineEventHandler(async (event) => {
   await db.collection('mail').add({
     to: 'aa@theazizifirm.com',
     message: {
-      subject: `New form submission from ${name}`,
-      text: `Name: ${name}\nPhone: ${phoneNumber}\nEmail: ${email}\nCase Description: ${caseDescription || ''}`,
+      subject: `New form submission from ${cleanName}`,
+      text: `Name: ${cleanName}\nPhone: ${number.phoneNumber}\nEmail: ${cleanEmail}\nCase Description: ${cleanDescription}`,
     },
   })
 
   await db.collection('forms').add({
-    name,
-    phone: phoneNumber,
-    email,
-    caseDescription: caseDescription || '',
+    name: cleanName,
+    phone: number.phoneNumber,
+    email: cleanEmail,
+    caseDescription: cleanDescription,
     createdDate: Timestamp.now(),
   })
 

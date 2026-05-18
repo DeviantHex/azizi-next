@@ -36,7 +36,8 @@ export default defineEventHandler(async (event) => {
   }
 
   const cookieToken = getCookie(event, '__session')
-  const headerToken = getHeader(event, 'authorization')?.replace('Bearer ', '')
+  const authorization = getHeader(event, 'authorization')
+  const headerToken = authorization?.startsWith('Bearer ') ? authorization.slice(7) : undefined
 
   if (!cookieToken && !headerToken) {
     throw createError({ statusCode: 401, statusMessage: 'Unauthorized' })

@@ -16,7 +16,7 @@ const ALLOWED_TAGS = [
 ]
 
 const ALLOWED_ATTR = [
-  'href', 'src', 'alt', 'title', 'class', 'id', 'style',
+  'href', 'src', 'alt', 'title', 'class', 'id',
   'target', 'rel', 'width', 'height',
 ]
 
@@ -24,5 +24,6 @@ export function sanitizeHtml(dirty: string): string {
   return purify.sanitize(dirty, {
     ALLOWED_TAGS,
     ALLOWED_ATTR,
+    ALLOW_DATA_ATTR: false,
   })
 }

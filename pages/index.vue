@@ -12,25 +12,25 @@
           <div class="text-center header-text">
             <i class="icon-before" />
             <div>
-              <h1>California <span>Employment Law</span> Firm<br /></h1>
-              <h2>Wrongful Termination &bull; Discrimination &bull; Harassment &bull; Retaliation &bull; Wage Disputes</h2>
+              <h1>Get a <span>Free</span> Case Evaluation by an Actual Attorney<br /></h1>
+              <h1>No Fees Until We Win!</h1>
             </div>
             <i class="icon-after" />
           </div>
-          <VBtn class="cta-btn" color="secondary" size="x-large" density="comfortable" @click="scrollToContactForm">Free Employment Law Consultation</VBtn>
+          <VBtn class="cta-btn" color="secondary" size="x-large" density="comfortable" @click="scrollToContactForm">Get a Free Evaluation</VBtn>
         </div>
       </VImg>
     </div>
     <VContainer>
       <div class="cta-header" v-if="smAndDown">
-        <h4>California Employment Law Firm</h4>
+        <h4>Your Success is our Priority</h4>
         <div>
           <div class="text-center header-text">
-            <h1>California <span>Employment Law</span> Firm<br /></h1>
-            <h2 class="mt-5">Wrongful Termination &bull; Discrimination &bull; Harassment &bull; Wage Disputes</h2>
+              <h1>Get a <span>Free</span> Case Evaluation by an Actual Attorney<br /></h1>
+              <h1 class="mt-5">No Fees Until We <span>Win!</span></h1>
           </div>
         </div>
-        <VBtn class="cta-btn" color="secondary" size="x-large" density="comfortable" @click="scrollToContactForm">Free Employment Law Consultation</VBtn>
+        <VBtn class="cta-btn" color="secondary" size="x-large" density="comfortable" @click="scrollToContactForm">Get a Free Evaluation</VBtn>
       </div>
       <div class="top-section"><h2><i v-if="!smAndDown" class="icon-start" />WHAT WE <span>DO</span><i v-if="!smAndDown" class="icon-end" /></h2></div>
       <div class="section">
@@ -78,7 +78,7 @@
             </div>
           </div>
         </VCard>
-        <VBtn class="cta-btn" color="secondary" size="x-large" density="comfortable" @click="scrollToContactForm">Free Employment Law Consultation</VBtn>
+        <VBtn class="cta-btn" color="secondary" size="x-large" density="comfortable" @click="scrollToContactForm">Get a Free Evaluation</VBtn>
       </div>
       <div class="services">
         <div class="content">

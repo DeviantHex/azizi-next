@@ -20,7 +20,11 @@ export default defineEventHandler(async (event) => {
     if (path === p || path.startsWith(p + '/')) {
       const isWriteMethod = method === 'POST' || method === 'PUT' || method === 'PATCH' || method === 'DELETE'
       const isBlogApi = path.startsWith('/api/blogs')
+      const isFormReadApi = path.startsWith('/api/form') && path !== '/api/form/send'
       const isTeamApi = path.startsWith('/api/team')
+      if (isFormReadApi) {
+        break
+      }
       if (!isWriteMethod || (!isBlogApi && !isTeamApi)) {
         return
       }

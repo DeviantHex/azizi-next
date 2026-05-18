@@ -50,9 +50,25 @@
                     <VFileInput v-model="blogForm.imageFile" accept="image/*" label="Header Image" name="blog-image" :rules="editingBlogId ? [] : [requiredFile]" />
                     <VTextField v-model="blogForm.headerImg" label="Existing Image URL" name="blog-image-url" type="url" autocomplete="off" hint="Used when editing without uploading a replacement image." persistent-hint />
                     <div class="content-editor">
-                      <label>Blog Content</label>
-                      <ClientOnly><LazyTextEditor v-model="blogForm.content" /></ClientOnly>
-                      <p class="editor-help">Use the toolbar above the writing area to format headings, links, lists, quotes, and tables.</p>
+                      <label for="blog-content">Blog Content</label>
+                      <VTextarea
+                        id="blog-content"
+                        v-model="blogForm.content"
+                        name="blog-content"
+                        autocomplete="off"
+                        rows="14"
+                        auto-grow
+                        persistent-hint
+                        hint="Write plain text or paste HTML. Headings, paragraphs, links, lists, and other HTML are supported."
+                      />
+                      <VExpansionPanels v-if="blogForm.content" variant="accordion">
+                        <VExpansionPanel>
+                          <VExpansionPanelTitle>Preview Blog Content</VExpansionPanelTitle>
+                          <VExpansionPanelText>
+                            <article class="blog-preview" v-html="blogForm.content" />
+                          </VExpansionPanelText>
+                        </VExpansionPanel>
+                      </VExpansionPanels>
                     </div>
                     <div class="form-actions">
                       <VBtn type="submit" color="primary" :loading="savingBlog">{{ editingBlogId ? 'Save Blog' : 'Post Blog' }}</VBtn>
@@ -161,11 +177,13 @@ const loadingLeads = ref(false)
 const savingBlog = ref(false)
 const deletingBlogId = ref('')
 const editingBlogId = ref('')
+const sessionChecked = ref(false)
+const hasServerSession = ref(false)
 
 const blogForm = reactive({ title: '', content: '', headerImg: '', imageFile: undefined as File | undefined })
 
 watchEffect(() => {
-  if (!loading.value && !user.value) {
+  if (!loading.value && sessionChecked.value && !user.value && !hasServerSession.value) {
     router.push('/login')
   }
 })
@@ -173,6 +191,7 @@ watchEffect(() => {
 useHead({ title: 'Admin | The Azizi Firm' })
 
 onMounted(async () => {
+  await checkServerSession()
   await Promise.all([fetchBlogs(), fetchLeads()])
 })
 
@@ -185,6 +204,16 @@ const handleError = async (err: any, fallback: string) => {
   const message = err?.data?.statusMessage || err?.message || fallback
   pageError.value = message
   await showAlert(message, 'danger')
+}
+
+const checkServerSession = async () => {
+  try {
+    await $fetch('/api/form/all', { query: { limit: 1 } })
+    hasServerSession.value = true
+  } catch {
+    hasServerSession.value = false
+  }
+  sessionChecked.value = true
 }
 
 const fetchBlogs = async () => {
@@ -228,7 +257,18 @@ const uploadImage = async (file: File) => {
 }
 
 const submitBlog = async () => {
-  if (!blogForm.title || !blogForm.content || (!editingBlogId.value && !blogForm.imageFile)) return
+  if (!blogForm.title) {
+    await handleError(null, 'Enter a blog title before posting.')
+    return
+  }
+  if (!blogForm.content.trim()) {
+    await handleError(null, 'Enter blog content before posting.')
+    return
+  }
+  if (!editingBlogId.value && !blogForm.imageFile) {
+    await handleError(null, 'Choose a header image before posting.')
+    return
+  }
   savingBlog.value = true
   try {
     const headerImg = blogForm.imageFile ? await uploadImage(blogForm.imageFile) : blogForm.headerImg
@@ -413,26 +453,13 @@ const formatDate = (value?: FirestoreDate) => {
   }
 }
 
-.editor-help {
-  color: #64748b;
-  font-size: 0.875rem;
-}
-
-:deep(.ck-editor) {
+.blog-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
   color: #0f172a;
-}
-
-:deep(.ck-editor__main > .ck-editor__editable) {
-  min-height: 360px;
-  border-color: #cbd5e1;
-  color: #0f172a;
-  background: #fff;
   line-height: 1.65;
-}
-
-:deep(.ck.ck-toolbar) {
-  border-color: #cbd5e1;
-  background: #f8fafc;
+  overflow-wrap: anywhere;
 }
 
 .form-actions,

@@ -134,7 +134,7 @@
     </VMain>
 
     <VContainer
-      v-if="route?.name !== 'contact-us' && route?.name !== 'login'"
+      v-if="showSiteCta"
       class="contact-box"
       id="contact-box"
     >
@@ -147,7 +147,7 @@
       <ContactForm />
     </VContainer>
 
-    <div class="cta-box">
+    <div v-if="showSiteCta" class="cta-box">
       <div class="content">
         <div class="left">
           <h3>Call Us</h3>
@@ -195,6 +195,7 @@ const navOpen = ref(false)
 const mobileNavTab = ref(0)
 const selectedPracticeAreaIndex = ref(0)
 const isHome = computed(() => route?.name === 'index' || route?.name === 'home')
+const showSiteCta = computed(() => !['admin', 'contact-us', 'login'].includes(String(route?.name)))
 const selectedPracticeArea = computed(() => practiceAreas[selectedPracticeAreaIndex.value])
 
 watch(navOpen, () => { mobileNavTab.value = 0 })

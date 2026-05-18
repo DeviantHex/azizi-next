@@ -5,27 +5,6 @@
         {{ pageError }}
       </VAlert>
 
-      <VRow class="metric-row">
-        <VCol cols="12" md="4">
-          <VSheet class="metric-card" rounded="xl">
-            <span>Published Articles</span>
-            <strong>{{ blogs.length }}</strong>
-          </VSheet>
-        </VCol>
-        <VCol cols="12" md="4">
-          <VSheet class="metric-card accent" rounded="xl">
-            <span>Client Leads</span>
-            <strong>{{ leads.length }}</strong>
-          </VSheet>
-        </VCol>
-        <VCol cols="12" md="4">
-          <VSheet class="metric-card" rounded="xl">
-            <span>Signed In</span>
-            <strong class="email-stat">{{ user?.email || 'Loading…' }}</strong>
-          </VSheet>
-        </VCol>
-      </VRow>
-
       <VCard class="workspace-card" rounded="xl">
         <VTabs v-model="tab" class="admin-tabs" color="primary" show-arrows>
           <VTab value="blogs">Blogs</VTab>
@@ -37,7 +16,6 @@
             <section class="workspace-section" aria-labelledby="blogs-heading">
               <div class="section-heading">
                 <div>
-                  <p class="eyebrow">Content Desk</p>
                   <h2 id="blogs-heading">Blog Manager</h2>
                 </div>
                 <VBtn color="primary" :loading="savingBlog" @click="submitBlog">{{ editingBlogId ? 'Save Blog' : 'Post Blog' }}</VBtn>
@@ -88,8 +66,20 @@
                       <VListItemSubtitle>{{ formatDate(blog.createdDate) }}</VListItemSubtitle>
                       <template #append>
                         <div class="list-actions">
-                          <VBtn size="small" variant="tonal" @click="editBlog(blog)">Edit</VBtn>
-                          <VBtn size="small" color="error" variant="tonal" :loading="deletingBlogId === blog.id" @click="deleteBlog(blog)">Delete</VBtn>
+                          <VBtn size="small" variant="tonal" aria-label="Edit Blog" title="Edit Blog" icon @click="editBlog(blog)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true">
+                              <path d="M0 0h24v24H0z" fill="none" />
+                              <path fill="currentColor" d="M5 21h14c1.1 0 2-.9 2-2v-7h-2v7H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2" />
+                              <path fill="currentColor" d="M7 13v3c0 .55.45 1 1 1h3c.27 0 .52-.11.71-.29l9-9a.996.996 0 0 0 0-1.41l-3-3a.996.996 0 0 0-1.41 0l-9.01 8.99A1 1 0 0 0 7 13m10-7.59L18.59 7L17.5 8.09L15.91 6.5zm-8 8l5.5-5.5l1.59 1.59l-5.5 5.5H9z" />
+                            </svg>
+                          </VBtn>
+                          <VBtn size="small" color="error" variant="tonal" aria-label="Delete Blog" title="Delete Blog" icon :loading="deletingBlogId === blog.id" @click="deleteBlog(blog)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true">
+                              <path d="M0 0h24v24H0z" fill="none" />
+                              <path fill="currentColor" d="M8 9h8v10H8z" opacity=".3" />
+                              <path fill="currentColor" d="m15.5 4l-1-1h-5l-1 1H5v2h14V4zM6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6zM8 9h8v10H8z" />
+                            </svg>
+                          </VBtn>
                         </div>
                       </template>
                     </VListItem>
@@ -103,10 +93,8 @@
             <section class="workspace-section" aria-labelledby="leads-heading">
               <div class="section-heading">
                 <div>
-                  <p class="eyebrow">Intake</p>
                   <h2 id="leads-heading">Contact Submissions</h2>
                 </div>
-                <VBtn variant="outlined" :loading="loadingLeads" @click="fetchLeads">Refresh Leads</VBtn>
               </div>
               <div v-if="loadingLeads" class="empty-state">Loading leads…</div>
               <div v-else-if="!leads.length" class="empty-state">No contact submissions are available.</div>
@@ -340,15 +328,6 @@ const formatDate = (value?: FirestoreDate) => {
   overflow-x: hidden;
 }
 
-.eyebrow {
-  color: #b45309;
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-
-.metric-card,
 .workspace-card {
   border: 1px solid rgba(15, 23, 42, 0.08);
   box-shadow: 0 24px 80px rgba(15, 23, 42, 0.12);
@@ -358,42 +337,6 @@ const formatDate = (value?: FirestoreDate) => {
   max-width: 1440px;
   padding-top: 40px;
   padding-bottom: 72px;
-}
-
-.metric-row {
-  margin-bottom: 22px;
-}
-
-.metric-card {
-  min-height: 132px;
-  padding: 24px;
-  background: rgba(255, 255, 255, 0.84);
-  backdrop-filter: blur(14px);
-
-  span {
-    color: #475569;
-    font-weight: 700;
-  }
-
-  strong {
-    display: block;
-    margin-top: 10px;
-    color: #1e3a8a;
-    font-size: 3rem;
-    line-height: 1;
-    font-variant-numeric: tabular-nums;
-  }
-
-  &.accent strong {
-    color: #b45309;
-  }
-
-  .email-stat {
-    color: #0f172a;
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    line-height: 1.25;
-    overflow-wrap: anywhere;
-  }
 }
 
 .workspace-card {

@@ -59,6 +59,7 @@
             </VMenu>
           </VBtn>
           <VBtn v-if="user" :color="isHome ? 'white' : ''" @click="navigateTo('/admin')">Admin</VBtn>
+          <VBtn v-if="user" :color="isHome ? 'white' : ''" variant="outlined" @click="logout">Logout</VBtn>
         </div>
 
         <div class="cta-btn-container">
@@ -101,6 +102,8 @@
             >
               {{ r.name }}
             </VListItem>
+            <VListItem v-if="user" @click="navOpen = false; navigateTo('/admin')">Admin</VListItem>
+            <VListItem v-if="user" @click="navOpen = false; logout()">Logout</VListItem>
           </VWindowItem>
           <VWindowItem>
             <VListItem
@@ -167,8 +170,6 @@
             <strong>&copy; 2024 - {{ new Date().getFullYear() }} The Azizi Firm. All rights reserved.</strong>
             <div class="links">
               <NuxtLink :to="{ name: 'privacy-policy' }" class="text-secondary">Privacy Policy</NuxtLink>
-              <VDivider v-if="user" vertical thickness="2" />
-              <a v-if="user" class="text-secondary" style="cursor:pointer" @click="logout">Logout</a>
             </div>
           </div>
           <img v-if="!smAndDown" alt="The Azizi Firm Logo" class="logo" src="/assets/images/header-logo.svg" />

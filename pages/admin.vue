@@ -1,18 +1,5 @@
 <template>
   <main class="admin-shell">
-    <section class="admin-hero" aria-labelledby="admin-title">
-      <div>
-        <p class="eyebrow">The Azizi Firm</p>
-        <h1 id="admin-title">Admin Command Center</h1>
-        <p class="hero-copy">Publish insight, review new case leads, and keep attorney profiles current from one secured workspace.</p>
-      </div>
-      <div class="hero-card" aria-live="polite">
-        <span>Signed In</span>
-        <strong>{{ user?.email || 'Loading…' }}</strong>
-        <VBtn variant="outlined" color="white" :loading="loading" @click="logout">Logout</VBtn>
-      </div>
-    </section>
-
     <VContainer class="admin-panel">
       <VAlert v-if="pageError" class="mb-4" type="error" variant="tonal" closable @click:close="pageError = ''">
         {{ pageError }}
@@ -33,8 +20,8 @@
         </VCol>
         <VCol cols="12" md="4">
           <VSheet class="metric-card" rounded="xl">
-            <span>Team Profiles</span>
-            <strong>{{ team.length }}</strong>
+            <span>Signed In</span>
+            <strong class="email-stat">{{ user?.email || 'Loading…' }}</strong>
           </VSheet>
         </VCol>
       </VRow>
@@ -43,8 +30,6 @@
         <VTabs v-model="tab" class="admin-tabs" color="primary" show-arrows>
           <VTab value="blogs">Blogs</VTab>
           <VTab value="leads">Leads</VTab>
-          <VTab value="profile">My Profile</VTab>
-          <VTab value="team">Add Team</VTab>
         </VTabs>
 
         <VWindow v-model="tab">
@@ -64,7 +49,11 @@
                     <VTextField v-model="blogForm.title" label="Title" name="blog-title" autocomplete="off" :rules="[required]" />
                     <VFileInput v-model="blogForm.imageFile" accept="image/*" label="Header Image" name="blog-image" :rules="editingBlogId ? [] : [requiredFile]" />
                     <VTextField v-model="blogForm.headerImg" label="Existing Image URL" name="blog-image-url" type="url" autocomplete="off" hint="Used when editing without uploading a replacement image." persistent-hint />
-                    <ClientOnly><LazyTextEditor v-model="blogForm.content" /></ClientOnly>
+                    <div class="content-editor">
+                      <label>Blog Content</label>
+                      <ClientOnly><LazyTextEditor v-model="blogForm.content" /></ClientOnly>
+                      <p class="editor-help">Use the toolbar above the writing area to format headings, links, lists, quotes, and tables.</p>
+                    </div>
                     <div class="form-actions">
                       <VBtn type="submit" color="primary" :loading="savingBlog">{{ editingBlogId ? 'Save Blog' : 'Post Blog' }}</VBtn>
                       <VBtn v-if="editingBlogId" variant="text" @click="resetBlogForm">Cancel Edit</VBtn>
@@ -126,51 +115,6 @@
             </section>
           </VWindowItem>
 
-          <VWindowItem value="profile">
-            <section class="workspace-section narrow" aria-labelledby="profile-heading">
-              <div class="section-heading">
-                <div>
-                  <p class="eyebrow">Attorney Record</p>
-                  <h2 id="profile-heading">My Profile</h2>
-                </div>
-                <VBtn color="primary" :loading="savingProfile" @click="saveProfile">Save Profile</VBtn>
-              </div>
-              <VForm class="editor-form" @submit.prevent="saveProfile">
-                <VTextField v-model="profileForm.name" label="Name" name="profile-name" autocomplete="name" />
-                <VTextField v-model="profileForm.title" label="Title" name="profile-title" autocomplete="organization-title" />
-                <VTextField v-model="profileForm.email" label="Email" name="profile-email" type="email" autocomplete="email" />
-                <VTextField v-model="profileForm.phone" label="Phone" name="profile-phone" type="tel" autocomplete="tel" />
-                <VTextField v-model="profileForm.photoUrl" label="Photo URL" name="profile-photo" type="url" autocomplete="off" />
-                <VTextarea v-model="profileForm.description" label="Description" name="profile-description" autocomplete="off" rows="5" />
-                <VCombobox v-model="profileForm.education" label="Education" name="profile-education" multiple chips autocomplete="off" hint="Press Enter after each credential." persistent-hint />
-                <VBtn type="submit" color="primary" :loading="savingProfile">Save Profile</VBtn>
-              </VForm>
-            </section>
-          </VWindowItem>
-
-          <VWindowItem value="team">
-            <section class="workspace-section narrow" aria-labelledby="team-heading">
-              <div class="section-heading">
-                <div>
-                  <p class="eyebrow">Access</p>
-                  <h2 id="team-heading">Add Team Member</h2>
-                </div>
-                <VBtn color="primary" :loading="creatingTeam" @click="createTeamMember">Create Member</VBtn>
-              </div>
-              <VForm class="editor-form" @submit.prevent="createTeamMember">
-                <VTextField v-model="teamForm.passkey" label="Registration Passkey" name="team-passkey" type="password" autocomplete="off" :rules="[required]" />
-                <VTextField v-model="teamForm.name" label="Name" name="team-name" autocomplete="name" :rules="[required]" />
-                <VTextField v-model="teamForm.title" label="Title" name="team-title" autocomplete="organization-title" :rules="[required]" />
-                <VTextField v-model="teamForm.email" label="Email" name="team-email" type="email" autocomplete="email" :rules="[required]" />
-                <VTextField v-model="teamForm.password" label="Temporary Password" name="team-password" type="password" autocomplete="new-password" :rules="[required]" />
-                <VTextField v-model="teamForm.phone" label="Phone" name="team-phone" type="tel" autocomplete="tel" :rules="[required]" />
-                <VTextField v-model="teamForm.photoUrl" label="Photo URL" name="team-photo" type="url" autocomplete="off" />
-                <VTextarea v-model="teamForm.description" label="Description" name="team-description" autocomplete="off" rows="5" :rules="[required]" />
-                <VCombobox v-model="teamForm.education" label="Education" name="team-education" multiple chips autocomplete="off" />
-                <VBtn type="submit" color="primary" :loading="creatingTeam">Create Member</VBtn>
-              </VForm>
-            </section>
-          </VWindowItem>
         </VWindow>
       </VCard>
     </VContainer>
@@ -197,20 +141,9 @@ interface LeadRecord {
   createdDate?: FirestoreDate
 }
 
-interface TeamRecord {
-  uid: string
-  name: string
-  title: string
-  email: string
-  phone: string
-  photoUrl: string
-  description: string
-  education: string[]
-}
-
 const router = useRouter()
 const route = useRoute()
-const { user, loading, logout } = useAuth()
+const { user, loading } = useAuth()
 
 const tab = computed({
   get: () => typeof route.query.tab === 'string' ? route.query.tab : 'blogs',
@@ -222,20 +155,14 @@ const requiredFile = (v: File | File[] | undefined) => !!v || 'Field is required
 
 const blogs = ref<BlogRecord[]>([])
 const leads = ref<LeadRecord[]>([])
-const team = ref<TeamRecord[]>([])
 const pageError = ref('')
 const loadingBlogs = ref(false)
 const loadingLeads = ref(false)
-const loadingTeam = ref(false)
 const savingBlog = ref(false)
-const savingProfile = ref(false)
-const creatingTeam = ref(false)
 const deletingBlogId = ref('')
 const editingBlogId = ref('')
 
 const blogForm = reactive({ title: '', content: '', headerImg: '', imageFile: undefined as File | undefined })
-const profileForm = reactive({ name: '', title: '', email: '', phone: '', photoUrl: '', description: '', education: [] as string[] })
-const teamForm = reactive({ passkey: '', name: '', title: '', email: '', password: '', phone: '', photoUrl: '', description: '', education: [] as string[] })
 
 watchEffect(() => {
   if (!loading.value && !user.value) {
@@ -246,11 +173,7 @@ watchEffect(() => {
 useHead({ title: 'Admin | The Azizi Firm' })
 
 onMounted(async () => {
-  await Promise.all([fetchBlogs(), fetchLeads(), fetchTeam()])
-})
-
-watch(user, (currentUser) => {
-  if (currentUser) fillProfileFromTeam()
+  await Promise.all([fetchBlogs(), fetchLeads()])
 })
 
 const showAlert = async (message: string, type: 'success' | 'danger' = 'success') => {
@@ -284,32 +207,6 @@ const fetchLeads = async () => {
     await handleError(err, 'Could not load leads.')
   }
   loadingLeads.value = false
-}
-
-const fetchTeam = async () => {
-  loadingTeam.value = true
-  try {
-    const res = await $fetch<{ data: TeamRecord[] }>('/api/team/all')
-    team.value = res.data || []
-    fillProfileFromTeam()
-  } catch (err) {
-    await handleError(err, 'Could not load team members.')
-  }
-  loadingTeam.value = false
-}
-
-const fillProfileFromTeam = () => {
-  const member = team.value.find(t => t.uid === user.value?.uid)
-  if (!member) return
-  Object.assign(profileForm, {
-    name: member.name || '',
-    title: member.title || '',
-    email: member.email || user.value?.email || '',
-    phone: member.phone || '',
-    photoUrl: member.photoUrl || '',
-    description: member.description || '',
-    education: member.education || [],
-  })
 }
 
 const readFileAsBase64 = async (file: File) => {
@@ -380,31 +277,6 @@ const resetBlogForm = () => {
   blogForm.imageFile = undefined
 }
 
-const saveProfile = async () => {
-  savingProfile.value = true
-  try {
-    await $fetch('/api/team/update', { method: 'POST', body: { ...profileForm } })
-    await showAlert('Profile updated')
-    await fetchTeam()
-  } catch (err) {
-    await handleError(err, 'Could not update profile.')
-  }
-  savingProfile.value = false
-}
-
-const createTeamMember = async () => {
-  creatingTeam.value = true
-  try {
-    await $fetch('/api/team/register', { method: 'POST', body: { ...teamForm } })
-    await showAlert('Team member created')
-    Object.assign(teamForm, { passkey: '', name: '', title: '', email: '', password: '', phone: '', photoUrl: '', description: '', education: [] })
-    await fetchTeam()
-  } catch (err) {
-    await handleError(err, 'Could not create team member.')
-  }
-  creatingTeam.value = false
-}
-
 const formatDate = (value?: FirestoreDate) => {
   if (!value) return 'No Date'
   let date: Date
@@ -428,38 +300,6 @@ const formatDate = (value?: FirestoreDate) => {
   overflow-x: hidden;
 }
 
-.admin-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
-  gap: 32px;
-  align-items: end;
-  padding: clamp(48px, 7vw, 96px) clamp(20px, 6vw, 88px) 28px;
-  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 62%, #1e40af 100%);
-  color: white;
-  position: relative;
-  isolation: isolate;
-
-  &::after {
-    content: '';
-    position: absolute;
-    inset: auto 7% -42px auto;
-    width: 220px;
-    height: 220px;
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    border-radius: 999px;
-    z-index: -1;
-  }
-
-  h1 {
-    max-width: 820px;
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: clamp(2.4rem, 7vw, 5.8rem);
-    line-height: 0.88;
-    letter-spacing: -0.06em;
-    text-wrap: balance;
-  }
-}
-
 .eyebrow {
   color: #b45309;
   font-size: 0.75rem;
@@ -468,47 +308,15 @@ const formatDate = (value?: FirestoreDate) => {
   text-transform: uppercase;
 }
 
-.hero-copy {
-  max-width: 680px;
-  margin-top: 18px;
-  color: rgba(255, 255, 255, 0.78);
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  line-height: 1.7;
-}
-
-.hero-card,
 .metric-card,
 .workspace-card {
   border: 1px solid rgba(15, 23, 42, 0.08);
   box-shadow: 0 24px 80px rgba(15, 23, 42, 0.12);
 }
 
-.hero-card {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 24px;
-  border-color: rgba(255, 255, 255, 0.2);
-  border-radius: 28px;
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(18px);
-  min-width: 0;
-
-  span {
-    color: rgba(255, 255, 255, 0.68);
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-  }
-
-  strong {
-    overflow-wrap: anywhere;
-  }
-}
-
 .admin-panel {
   max-width: 1440px;
-  padding-top: 28px;
+  padding-top: 40px;
   padding-bottom: 72px;
 }
 
@@ -538,6 +346,13 @@ const formatDate = (value?: FirestoreDate) => {
 
   &.accent strong {
     color: #b45309;
+  }
+
+  .email-stat {
+    color: #0f172a;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.25;
+    overflow-wrap: anywhere;
   }
 }
 
@@ -584,6 +399,40 @@ const formatDate = (value?: FirestoreDate) => {
 
 .editor-form {
   flex-direction: column;
+}
+
+.content-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  label {
+    color: #334155;
+    font-size: 0.875rem;
+    font-weight: 700;
+  }
+}
+
+.editor-help {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+:deep(.ck-editor) {
+  color: #0f172a;
+}
+
+:deep(.ck-editor__main > .ck-editor__editable) {
+  min-height: 360px;
+  border-color: #cbd5e1;
+  color: #0f172a;
+  background: #fff;
+  line-height: 1.65;
+}
+
+:deep(.ck.ck-toolbar) {
+  border-color: #cbd5e1;
+  background: #f8fafc;
 }
 
 .form-actions,
@@ -656,10 +505,6 @@ const formatDate = (value?: FirestoreDate) => {
 }
 
 @media (max-width: 960px) {
-  .admin-hero {
-    grid-template-columns: 1fr;
-  }
-
   .section-heading {
     align-items: flex-start;
     flex-direction: column;
@@ -667,10 +512,6 @@ const formatDate = (value?: FirestoreDate) => {
 }
 
 @media (max-width: 600px) {
-  .admin-hero {
-    padding-inline: 18px;
-  }
-
   .workspace-section {
     padding: 18px;
   }

@@ -11,6 +11,12 @@ export default defineEventHandler(async () => {
     addUrl(p)
   }
 
+  // Practice area pages
+  const practiceAreas = ['employment-law', 'personal-injury', 'auto-fraud', 'lemon-law']
+  for (const p of practiceAreas) {
+    addUrl(`/practice-areas/${p}`)
+  }
+
   // FAQ pages (15 pages)
   const faqs = [
     'what-is-wrongful-termination', 'signs-of-workplace-discrimination',

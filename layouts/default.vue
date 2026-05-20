@@ -16,14 +16,14 @@
       <VContainer class="header">
         <div class="logo-container">
           <img
-            v-show="smAndDown || !isHome"
+            v-if="smAndDown || !isHome"
             class="logo"
             alt="The Azizi Firm Logo"
             src="/assets/images/header-logo.svg"
             @click="navigateTo('/')"
           />
           <img
-            v-show="!smAndDown && isHome"
+            v-else
             class="logo"
             alt="The Azizi Firm Logo"
             src="/assets/images/logo-white.svg"
@@ -31,7 +31,7 @@
           />
         </div>
 
-        <div class="nav-btns" :class="{ 'is-mobile': smAndDown }" :aria-hidden="smAndDown">
+        <div v-if="!smAndDown" class="nav-btns">
           <VBtn
             v-for="r in navRoutes"
             :key="r.path || r.name"
@@ -59,12 +59,11 @@
             </VMenu>
           </VBtn>
           <VBtn v-if="user" :color="isHome ? 'white' : ''" @click="navigateTo('/admin')">Admin</VBtn>
-          <VBtn v-if="user" :color="isHome ? 'white' : ''" variant="outlined" @click="logout">Logout</VBtn>
         </div>
 
         <div class="cta-btn-container">
           <VBtn
-            v-show="!smAndDown"
+            v-if="!smAndDown"
             class="cta-btn"
             color="secondary"
             size="large"
@@ -74,7 +73,7 @@
           >
             +1 858-829-3962
           </VBtn>
-          <div v-show="smAndDown" class="mobile-btns">
+          <div v-else class="mobile-btns">
             <VBtn :icon="mdiPhone" variant="outlined" size="small" href="tel:+18588293962" />
             <VBtn
               icon
@@ -90,7 +89,7 @@
       </VContainer>
     </VAppBar>
 
-    <VNavigationDrawer v-model="navOpen" sticky location="top" temporary class="mobile-drawer">
+    <VNavigationDrawer v-if="smAndDown" v-model="navOpen" sticky location="top">
       <VList>
         <VWindow v-model="mobileNavTab">
           <VWindowItem>
@@ -102,8 +101,6 @@
             >
               {{ r.name }}
             </VListItem>
-            <VListItem v-if="user" @click="navOpen = false; navigateTo('/admin')">Admin</VListItem>
-            <VListItem v-if="user" @click="navOpen = false; logout()">Logout</VListItem>
           </VWindowItem>
           <VWindowItem>
             <VListItem
@@ -134,7 +131,7 @@
     </VMain>
 
     <VContainer
-      v-if="showSiteCta"
+      v-if="route?.name !== 'contact-us' && route?.name !== 'login'"
       class="contact-box"
       id="contact-box"
     >
@@ -147,7 +144,7 @@
       <ContactForm />
     </VContainer>
 
-    <div v-if="showSiteCta" class="cta-box">
+    <div class="cta-box">
       <div class="content">
         <div class="left">
           <h3>Call Us</h3>
@@ -170,9 +167,11 @@
             <strong>&copy; 2024 - {{ new Date().getFullYear() }} The Azizi Firm. All rights reserved.</strong>
             <div class="links">
               <NuxtLink :to="{ name: 'privacy-policy' }" class="text-secondary">Privacy Policy</NuxtLink>
+              <VDivider v-if="user" vertical thickness="2" />
+              <a v-if="user" class="text-secondary" style="cursor:pointer" @click="logout">Logout</a>
             </div>
           </div>
-          <img v-show="!smAndDown" alt="The Azizi Firm Logo" class="logo" src="/assets/images/header-logo.svg" />
+          <img v-if="!smAndDown" alt="The Azizi Firm Logo" class="logo" src="/assets/images/header-logo.svg" />
         </div>
       </VContainer>
     </VFooter>
@@ -195,16 +194,15 @@ const navOpen = ref(false)
 const mobileNavTab = ref(0)
 const selectedPracticeAreaIndex = ref(0)
 const isHome = computed(() => route?.name === 'index' || route?.name === 'home')
-const showSiteCta = computed(() => !['admin', 'contact-us', 'login'].includes(String(route?.name)))
 const selectedPracticeArea = computed(() => practiceAreas[selectedPracticeAreaIndex.value])
 
 watch(navOpen, () => { mobileNavTab.value = 0 })
 
 const practiceAreas = [
-  { name: 'Employment Law', path: '/contact-us', subNames: ['WRONGFUL TERMINATION','WHISTLEBLOWER CASES','WORKPLACE RETALIATION','HOSTILE WORK ENVIRONMENT','PREGNANCY DISCRIMINATION','RACIAL DISCRIMINATION','SEXUAL ORIENTATION DISCRIMINATION','WAGE AND HOUR DISPUTES','SEXUAL HARASSMENT','HARASSMENT','RETALIATION'] },
-  { name: 'Personal Injury', path: '/contact-us', subNames: ['CAR ACCIDENTS','TRUCK ACCIDENTS','MOTORCYCLE ACCIDENTS','RIDESHARE ACCIDENTS','BRAIN INJURIES','BOAT ACCIDENTS','PEDESTRIAN ACCIDENTS','WRONGFUL DEATH','SLIP AND FALLS','DOG BITES','ELECTRIC SCOOTER ACCIDENTS','ELECTRIC BIKE ACCIDENTS'] },
-  { name: 'Auto Fraud', path: '/contact-us', subNames: ['ODOMETER FRAUD','TITLE WASHING','NON-DISCLOSURE OF SALVAGE','BAIT AND SWITCH','FINANCING FRAUD','LEMON LAUNDERING','MISREPRESENTATION OF VEHICLE CONDITION'] },
-  { name: 'Lemon Law', path: '/contact-us', subNames: ['REPEATED MECHANICAL ISSUES','SAFETY DEFECTS','SIGNIFICANT NON-CONFORMITY',"UNDER MANUFACTURER'S WARRANTY",'CERTIFIED PRE-OWNED VEHICLES','NEWLY LEASED VEHICLES','LIGHT-DUTY TRUCKS AND VANS','AIRBAG MALFUNCTIONS','HEATING AND AIR CONDITIONING PROBLEMS'] },
+  { name: 'Employment Law', path: '/practice-areas/employment-law', subNames: ['WRONGFUL TERMINATION','WHISTLEBLOWER CASES','WORKPLACE RETALIATION','HOSTILE WORK ENVIRONMENT','PREGNANCY DISCRIMINATION','RACIAL DISCRIMINATION','SEXUAL ORIENTATION DISCRIMINATION','WAGE AND HOUR DISPUTES','SEXUAL HARASSMENT','HARASSMENT','RETALIATION'] },
+  { name: 'Personal Injury', path: '/practice-areas/personal-injury', subNames: ['CAR ACCIDENTS','TRUCK ACCIDENTS','MOTORCYCLE ACCIDENTS','RIDESHARE ACCIDENTS','BRAIN INJURIES','BOAT ACCIDENTS','PEDESTRIAN ACCIDENTS','WRONGFUL DEATH','SLIP AND FALLS','DOG BITES','ELECTRIC SCOOTER ACCIDENTS','ELECTRIC BIKE ACCIDENTS'] },
+  { name: 'Auto Fraud', path: '/practice-areas/auto-fraud', subNames: ['ODOMETER FRAUD','TITLE WASHING','NON-DISCLOSURE OF SALVAGE','BAIT AND SWITCH','FINANCING FRAUD','LEMON LAUNDERING','MISREPRESENTATION OF VEHICLE CONDITION'] },
+  { name: 'Lemon Law', path: '/practice-areas/lemon-law', subNames: ['REPEATED MECHANICAL ISSUES','SAFETY DEFECTS','SIGNIFICANT NON-CONFORMITY',"UNDER MANUFACTURER'S WARRANTY",'CERTIFIED PRE-OWNED VEHICLES','NEWLY LEASED VEHICLES','LIGHT-DUTY TRUCKS AND VANS','AIRBAG MALFUNCTIONS','HEATING AND AIR CONDITIONING PROBLEMS'] },
 ]
 
 const navRoutes = [
@@ -322,14 +320,6 @@ useHead({
   flex: 1;
   display: flex;
   flex-direction: column;
-
-  a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    color: rgb(var(--v-theme-primary));
-  }
 }
 .v-list-item { font-weight: 450; }
 .header {
@@ -337,28 +327,11 @@ useHead({
   padding: 16px 4px;
   width: 100%;
   align-items: center;
-  .logo-container {
-    flex: 1;
-
-    .logo {
-      width: 120px;
-      cursor: pointer;
-      transition: opacity 180ms ease, transform 180ms ease;
-
-      &:hover {
-        opacity: 0.88;
-        transform: translate3d(0, -1px, 0);
-      }
-    }
-  }
+  .logo-container { flex: 1; .logo { width: 120px; cursor: pointer; } }
   .nav-btns {
     margin: auto;
     display: flex;
     gap: 4px;
-
-    &.is-mobile {
-      display: none;
-    }
   }
   .cta-btn-container {
     flex: 1;
@@ -403,23 +376,4 @@ useHead({
     }
   }
 
-.mobile-drawer {
-  display: none;
-}
-
-@media (max-width: 959px) {
-  .mobile-drawer {
-    display: block;
-  }
-
-  .header {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
-  .footer .bottom-section {
-    flex-direction: column;
-    gap: 12px;
-  }
-}
 </style>

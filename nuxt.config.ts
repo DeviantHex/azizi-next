@@ -60,7 +60,7 @@ export default defineNuxtConfig({
       '/employment-law/**',
       '/employment-lawyer/**',
       '/lemon-law-attorney/**',
-      '/practice-areas/**',
+
       '/wrongful-death-attorney/**',
     ],
   },
@@ -73,7 +73,6 @@ export default defineNuxtConfig({
         'employment-law-subarea',
         'employment-lawyer-city',
         'lemon-law-attorney-city',
-        'practice-areas-area',
         'wrongful-death-attorney-city',
       ])
 

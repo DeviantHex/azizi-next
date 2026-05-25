@@ -26,12 +26,11 @@
           <h1>{{ blog.title }}</h1>
           <VBtn :icon="mdiShareVariantOutline" color="#CDB08350" @click="copyLink" />
         </div>
-        <PageMetaBar :date="lastUpdatedDate" />
+        <PageMetaBar />
         <div class="user-info">
           <VAvatar src="/assets/images/amer-portrait-small.jpg" size="30" alt="Amer Azizi" />
           <h4>Amer Azizi</h4>
-          <VIcon :icon="mdiCircleMedium" color="#CCC" />
-          <p v-if="blog.createdDate">{{ dayjs.unix(blog.createdDate._seconds).format('MMMM DD, YYYY') }}</p>
+
         </div>
       </div>
       <div class="content" v-html="blog.content" />
@@ -66,8 +65,7 @@
 </template>
 
 <script setup lang="ts">
-import { mdiCircleMedium, mdiShareVariantOutline } from '@mdi/js'
-import dayjs from 'dayjs'
+import { mdiShareVariantOutline } from '@mdi/js'
 import { getBlogRelatedLinks } from '~/utils/contentIndex'
 import { CONTENT_LAST_UPDATED, formatIsoDate, stripHtml } from '~/utils/seo'
 
@@ -105,11 +103,6 @@ const blogDescription = computed(() => {
 
 const pageTitle = computed(() => blog.value?.title ? `${blog.value.title} | The Azizi Firm` : 'Blog | The Azizi Firm')
 const canonicalUrl = computed(() => `https://theazizifirm.com/blog/${id}`)
-const lastUpdatedDate = computed(() => {
-  const timestamp = blog.value?.updatedDate || blog.value?.createdDate
-  if (!timestamp?._seconds) return CONTENT_LAST_UPDATED
-  return dayjs.unix(timestamp._seconds).format('YYYY-MM-DD')
-})
 const relatedLinks = computed(() => getBlogRelatedLinks(blog.value?.title, blog.value?.content))
 
 useSeoMeta({

@@ -15,7 +15,7 @@
           </div>
         </VCard>
       </template>
-      <VCard v-for="{ id, title, content, createdDate, updatedDate, headerImg } in blogs" :key="id" class="post" variant="outlined" color="#ddd" rounded="md" :to="`/blog/${id}`">
+      <VCard v-for="{ id, title, content, headerImg } in blogs" :key="id" class="post" variant="outlined" color="#ddd" rounded="md" :to="`/blog/${id}`">
         <div class="content" :style="{ flexDirection: smAndDown ? 'column' : 'row' }">
           <VImg :src="headerImg" :width="smAndDown ? undefined : 200" aspect-ratio="1" rounded="lg" :alt="title" />
           <div class="text">
@@ -23,9 +23,7 @@
             <div class="user-info">
               <VAvatar :image="profilePic" size="30" alt="Amer Azizi" />
               <h4>Amer Azizi</h4>
-              <VIcon :icon="mdiCircleMedium" color="#CCC" />
-              <p v-if="updatedDate?._seconds">Updated {{ dayjs.unix(updatedDate._seconds).format('MMMM DD, YYYY') }}</p>
-              <p v-else-if="createdDate">{{ dayjs.unix(createdDate._seconds).format('MMMM DD, YYYY') }}</p>
+
             </div>
             <div class="text-content" v-html="content" :style="{ '-webkit-line-clamp': smAndDown ? '10' : '4' }" />
             <NuxtLink class="read-more-btn" :to="`/blog/${id}`">Read More</NuxtLink>
@@ -38,8 +36,6 @@
 
 <script setup lang="ts">
 import profilePic from '@/assets/images/amer-portrait-small.jpg'
-import { mdiCircleMedium } from '@mdi/js'
-import dayjs from 'dayjs'
 import { CONTENT_LAST_UPDATED, formatIsoDate } from '~/utils/seo'
 
 const { smAndDown } = useDisplay()

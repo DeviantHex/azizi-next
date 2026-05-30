@@ -2,7 +2,6 @@
   <VContainer class="hub-page">
     <div class="intro">
       <h1>California Practice Areas</h1>
-      <PageMetaBar />
       <p>
         The Azizi Firm focuses primarily on California employment law and also represents clients in
         personal injury, lemon law, and auto fraud matters. Use this hub to move into the practice area

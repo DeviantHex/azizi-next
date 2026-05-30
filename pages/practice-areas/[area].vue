@@ -7,7 +7,6 @@
       <VBtn class="cta-btn" color="secondary" size="x-large" density="comfortable" @click="scrollToContactForm">Get a Free Evaluation</VBtn>
     </div>
     <div class="info" :class="{ 'text-center': smAndDown }">
-      <PageMetaBar />
       <div class="text-block">
         <h2 :class="{ 'text-icon-end-short': !smAndDown }">{{ detail.headerText }}</h2>
         <p v-html="detail.topParagraph"></p>
@@ -45,21 +44,11 @@
         <h3>Contact Us</h3>
         <p>{{ detail.contactUsText }}</p>
       </div>
-      <div class="text-block">
-        <h2 class="text-secondary">Explore Related Resources</h2>
-        <div class="related-links">
-          <NuxtLink v-for="link in resourceLinks" :key="link.href" :to="link.href">
-            <strong>{{ link.title }}</strong>
-            <span>{{ link.description }}</span>
-          </NuxtLink>
-        </div>
-      </div>
     </div>
   </VContainer>
 </template>
 
 <script setup lang="ts">
-import { comparePageLinks, employmentSubtopicLinks, faqPageLinks } from '~/utils/contentIndex'
 import { CONTENT_LAST_UPDATED, formatIsoDate } from '~/utils/seo'
 
 const { smAndDown } = useDisplay()
@@ -85,17 +74,6 @@ if (!detail.value) {
 }
 
 const imageUrl = computed(() => detail.value?.src || '')
-const resourceLinks = computed(() => {
-  if (route.params.area === 'employment-law') {
-    return employmentSubtopicLinks
-  }
-
-  return [
-    ...comparePageLinks.slice(0, 3),
-    ...faqPageLinks.slice(9, 12),
-  ]
-})
-
 const descriptions: Record<string, string> = {
   'personal-injury': 'California personal injury lawyer representing car accidents, truck accidents, motorcycle accidents, slip and falls, wrongful death, brain injuries, and more. Free consultation. No fees unless we win.',
   'employment-law': 'California employment lawyer handling wrongful termination, workplace discrimination, harassment, retaliation, wage disputes, and whistleblower cases. Free case evaluation. Call (858) 829-3962.',
@@ -185,24 +163,6 @@ const scrollToContactForm = () => {
         display: flex; flex-direction: column; gap: 8px; text-align: left;
         .bullet { display: flex; gap: 4px; align-items: start; }
         img { margin-top: 0.4rem; }
-      }
-    }
-    .related-links {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 12px;
-
-      a {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        padding: 14px;
-        border: 1px solid #e5e7eb;
-        border-radius: 8px;
-      }
-
-      span {
-        color: #5c6670;
       }
     }
   }

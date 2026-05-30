@@ -209,7 +209,7 @@ const navRoutes = [
   { name: 'Home', path: '/' },
   { name: 'Practice Areas', children: practiceAreas },
   { name: 'About', path: '/about' },
-  { name: 'Our Team', path: '/our-team' },
+  { name: 'Biography', path: '/our-team' },
   { name: 'Blogs', path: '/blogs' },
   { name: 'Contact', path: '/contact-us' },
 ]

@@ -86,18 +86,18 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'The Azizi Firm | California Employment Law Firm',
+      title: 'The Azizi Firm | Employment Law',
       htmlAttrs: { lang: 'en' },
       meta: [
         { name: 'description', content: 'California employment law firm. Wrongful termination, discrimination, harassment, retaliation & wage disputes. Free consultation. Serving all of California. No fees unless we win. Call (858) 829-3962.' },
-        { property: 'og:title', content: 'The Azizi Firm | California Employment Law Firm' },
+        { property: 'og:title', content: 'The Azizi Firm | Employment Law' },
         { property: 'og:description', content: 'California employment law firm. Wrongful termination, discrimination, harassment, retaliation & wage disputes. Free consultation. Serving all of California. No fees unless we win.' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://theazizifirm.com' },
         { property: 'og:site_name', content: 'The Azizi Firm' },
         { property: 'og:locale', content: 'en_US' },
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'The Azizi Firm | California Employment Law Firm' },
+        { name: 'twitter:title', content: 'The Azizi Firm | Employment Law' },
         { name: 'twitter:description', content: 'California employment law firm. Wrongful termination, discrimination, harassment, retaliation & wage disputes. Free consultation. No fees unless we win.' },
         { name: 'robots', content: 'index, follow' },
       ],

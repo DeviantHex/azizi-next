@@ -156,12 +156,12 @@ const { smAndDown } = useDisplay()
 const flashCards = ['We Fight For You', 'No Fees Unless We Win', 'Your Success Is Our Priority', 'Exceptional Results']
 
 const carouselImages = [
-  { src: '/assets/images/homepage-carousel/employment-law.png', alt: 'California Employment Law Practice Area', path: '/contact-us' },
-  { src: '/assets/images/homepage-carousel/personal-injury.png', alt: 'Personal Injury Law Practice Area', path: '/contact-us' },
-  { src: '/assets/images/homepage-carousel/auto-accidents.png', alt: 'Auto Accident Law Practice Area', path: '/contact-us' },
-  { src: '/assets/images/homepage-carousel/wrongful-death.png', alt: 'Wrongful Death Law Practice Area', path: '/contact-us' },
-  { src: '/assets/images/homepage-carousel/lemon-law.png', alt: 'Lemon Law Practice Area', path: '/contact-us' },
-  { src: '/assets/images/homepage-carousel/auto-fraud.png', alt: 'Auto Fraud Law Practice Area', path: '/contact-us' },
+  { src: '/assets/images/homepage-carousel/employment-law.png', alt: 'California Employment Law Practice Area', path: '/practice-areas/employment-law' },
+  { src: '/assets/images/homepage-carousel/personal-injury.png', alt: 'Personal Injury Law Practice Area', path: '/practice-areas/personal-injury' },
+  { src: '/assets/images/homepage-carousel/auto-accidents.png', alt: 'Auto Accident Law Practice Area', path: '/practice-areas/personal-injury' },
+  { src: '/assets/images/homepage-carousel/wrongful-death.png', alt: 'Wrongful Death Law Practice Area', path: '/practice-areas/personal-injury' },
+  { src: '/assets/images/homepage-carousel/lemon-law.png', alt: 'Lemon Law Practice Area', path: '/practice-areas/lemon-law' },
+  { src: '/assets/images/homepage-carousel/auto-fraud.png', alt: 'Auto Fraud Law Practice Area', path: '/practice-areas/auto-fraud' },
 ]
 
 const scrollToContactForm = () => document.getElementById('contact-box')?.scrollIntoView({ behavior: 'smooth' })

@@ -163,7 +163,7 @@ export function getBlogRelatedLinks(title = '', content = ''): LinkItem[] {
   if (text.includes('injury') || text.includes('accident') || text.includes('collision')) {
     return [
       { title: 'California Personal Injury Lawyer', href: '/practice-areas/personal-injury' },
-      { title: 'California Car Accident Lawyer', href: '/car-accident-lawyer/san-diego' },
+      { title: 'Average Car Accident Settlement in California', href: '/faq/car-accident-settlement-california' },
       faqPageLinks.find((link) => link.href === '/faq/personal-injury-timeline')!,
     ]
   }

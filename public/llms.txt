@@ -24,21 +24,6 @@
 - Wage and Hour Disputes: https://theazizifirm.com/employment-law/wage-and-hour-disputes
 - Whistleblower Protection: https://theazizifirm.com/employment-law/whistleblower-protection
 - Workplace Retaliation: https://theazizifirm.com/employment-law/workplace-retaliation
-- Hostile Work Environment: https://theazizifirm.com/employment-law/hostile-work-environment
-- Pregnancy Discrimination: https://theazizifirm.com/employment-law/pregnancy-discrimination
-- Racial Discrimination: https://theazizifirm.com/employment-law/racial-discrimination
-- Age Discrimination: https://theazizifirm.com/employment-law/age-discrimination
-- Disability Discrimination: https://theazizifirm.com/employment-law/disability-discrimination
-- Gender Discrimination: https://theazizifirm.com/employment-law/gender-discrimination
-- Religious Discrimination: https://theazizifirm.com/employment-law/religious-discrimination
-- Unpaid Wages: https://theazizifirm.com/employment-law/unpaid-wages
-- Overtime Violations: https://theazizifirm.com/employment-law/overtime-violations
-- Employee Misclassification: https://theazizifirm.com/employment-law/misclassification
-- Constructive Discharge: https://theazizifirm.com/employment-law/wrongful-constructive-discharge
-- Employment Contract Disputes: https://theazizifirm.com/employment-law/breach-of-employment-contract
-- Family and Medical Leave: https://theazizifirm.com/employment-law/family-medical-leave
-- Severance Agreements: https://theazizifirm.com/employment-law/severance-agreements
-- Non-Compete Agreements: https://theazizifirm.com/employment-law/non-compete-agreements
 
 ## Helpful Hubs
 - FAQ Hub: https://theazizifirm.com/faq
@@ -70,15 +55,5 @@
 - Personal Injury vs Workers' Compensation: https://theazizifirm.com/compare/personal-injury-vs-workers-comp
 - Lemon Law vs Auto Fraud: https://theazizifirm.com/compare/lemon-law-vs-auto-fraud
 
-## Location Coverage Examples
-- Los Angeles Employment Lawyer: https://theazizifirm.com/employment-lawyer/los-angeles
-- San Diego Employment Lawyer: https://theazizifirm.com/employment-lawyer/san-diego
-- San Francisco Employment Lawyer: https://theazizifirm.com/employment-lawyer/san-francisco
-- San Jose Employment Lawyer: https://theazizifirm.com/employment-lawyer/san-jose
-- Sacramento Employment Lawyer: https://theazizifirm.com/employment-lawyer/sacramento
-- Los Angeles Car Accident Lawyer: https://theazizifirm.com/car-accident-lawyer/los-angeles
-- San Diego Car Accident Lawyer: https://theazizifirm.com/car-accident-lawyer/san-diego
-- Los Angeles Wrongful Death Attorney: https://theazizifirm.com/wrongful-death-attorney/los-angeles
-- San Diego Wrongful Death Attorney: https://theazizifirm.com/wrongful-death-attorney/san-diego
-- Los Angeles Lemon Law Attorney: https://theazizifirm.com/lemon-law-attorney/los-angeles
-- San Diego Lemon Law Attorney: https://theazizifirm.com/lemon-law-attorney/san-diego
+## Geographic Scope
+The firm serves clients throughout California from its San Diego office.

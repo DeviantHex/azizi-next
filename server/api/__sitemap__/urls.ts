@@ -7,7 +7,7 @@ export default defineEventHandler(async () => {
   const addUrl = (loc: string) => { urls.push({ loc, lastmod: today }) }
 
   // Static pages
-  for (const p of ['/', '/about', '/our-team', '/blogs', '/contact-us', '/privacy-policy']) {
+  for (const p of ['/', '/about', '/our-team', '/blogs', '/contact-us', '/privacy-policy', '/practice-areas', '/faq', '/compare']) {
     addUrl(p)
   }
 
@@ -15,6 +15,31 @@ export default defineEventHandler(async () => {
   const practiceAreas = ['employment-law', 'personal-injury', 'auto-fraud', 'lemon-law']
   for (const p of practiceAreas) {
     addUrl(`/practice-areas/${p}`)
+  }
+
+  const employmentTopics = [
+    'wrongful-termination',
+    'workplace-discrimination',
+    'sexual-harassment',
+    'wage-and-hour-disputes',
+    'whistleblower-protection',
+    'workplace-retaliation',
+  ]
+  for (const topic of employmentTopics) {
+    addUrl(`/employment-law/${topic}`)
+  }
+
+  const comparePages = [
+    'wrongful-termination-vs-discrimination',
+    'employment-lawyer-vs-self-representation',
+    'personal-injury-vs-workers-comp',
+    'lemon-law-vs-auto-fraud',
+    'settlement-vs-trial',
+    'at-will-vs-contract-employment',
+    'exempt-vs-non-exempt',
+  ]
+  for (const page of comparePages) {
+    addUrl(`/compare/${page}`)
   }
 
   // FAQ pages (15 pages)

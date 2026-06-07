@@ -127,7 +127,7 @@
     </VNavigationDrawer>
 
     <VMain>
-      <NuxtPage />
+      <slot />
     </VMain>
 
     <VContainer
@@ -376,4 +376,59 @@ useHead({
     }
   }
 
+@media (max-width: 600px) {
+  .top-cta {
+    gap: 2px;
+    font-size: 0.86rem;
+    line-height: 1.2;
+  }
+
+  .header {
+    padding: 10px 12px;
+
+    .logo-container .logo {
+      width: 108px;
+    }
+
+    .cta-btn-container .mobile-btns {
+      gap: 8px;
+    }
+  }
+
+  :deep(.v-navigation-drawer) {
+    box-shadow: 0 18px 36px rgba(52, 72, 92, 0.18);
+  }
+
+  :deep(.v-navigation-drawer__content) {
+    overscroll-behavior: contain;
+  }
+
+  .contact-box {
+    margin-top: 1.25rem;
+    text-align: left;
+
+    .text {
+      p {
+        margin-bottom: 0.75rem;
+      }
+    }
+  }
+
+  .cta-box .content {
+    padding: 0.5rem 0;
+
+    .left,
+    .right {
+      margin: 12px auto;
+    }
+  }
+
+  .footer {
+    gap: 12px;
+
+    .bottom-section {
+      display: block;
+    }
+  }
+}
 </style>

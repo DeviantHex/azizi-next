@@ -53,9 +53,11 @@
       <div class="practice-areas">
         <div class="content">
           <h2><i v-if="!smAndDown" class="icon-start" />PRACTICE <span>AREAS</span><i v-if="!smAndDown" class="icon-end" /></h2>
-          <VCarousel v-if="smAndDown" height="auto" :show-arrows="false" continuous cycle interval="4000">
-            <VCarouselItem v-for="area in carouselImages" :key="area.src" :src="area.src" :alt="area.alt" @click="navigateTo(area.path)" style="cursor:pointer" />
-          </VCarousel>
+          <div v-if="smAndDown" class="mobile-practice-grid">
+            <NuxtLink v-for="area in carouselImages" :key="area.src" :to="area.path" class="mobile-practice-card">
+              <img :src="area.src" :alt="area.alt" loading="lazy" />
+            </NuxtLink>
+          </div>
           <div v-else class="image-group">
             <div class="image-row">
               <NuxtLink v-for="area in carouselImages.slice(0,3)" :key="area.src" :to="area.path"><img :src="area.src" :alt="area.alt" /></NuxtLink>
@@ -199,6 +201,21 @@ const scrollToContactForm = () => document.getElementById('contact-box')?.scroll
   }
   .practice-areas {
     .content { padding: 3rem 0; h2 { margin-bottom: 2rem; }
+      .mobile-practice-grid {
+        display: grid;
+        gap: 12px;
+      }
+      .mobile-practice-card {
+        display: block;
+        overflow: hidden;
+        border-radius: 14px;
+        box-shadow: 0 10px 24px rgba(52, 72, 92, 0.12);
+        background: #f8f6f0;
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
       .image-group {
         .image-row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; a { width: min(300px, 32.33%); img { width: 100%; } } }
       }
@@ -224,6 +241,77 @@ const scrollToContactForm = () => document.getElementById('contact-box')?.scroll
           .icon { position: absolute; top: 15px; right: 15px; &.secondary :deep(path) { fill: rgb(var(--v-theme-secondary)); } }
           h4 { font-size: 1.3rem; }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .homepage {
+    .banner {
+      overflow: hidden;
+
+      .banner-img {
+        min-height: 360px;
+        object-fit: cover;
+      }
+
+      .logo {
+        width: min(72vw, 280px);
+        filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.38));
+      }
+    }
+
+    .cta-header {
+      gap: 1rem;
+      padding: 1.5rem 0 0;
+      text-align: center;
+
+      h1 {
+        font-size: clamp(1.55rem, 7vw, 2.05rem);
+        line-height: 1.08;
+      }
+    }
+
+    .top-section {
+      margin-top: 2rem;
+    }
+
+    .section {
+      gap: 1rem;
+      text-align: left;
+    }
+
+    .cta-box .content {
+      padding: 0.35rem 0;
+    }
+
+    .practice-areas .content {
+      padding: 2rem 0;
+
+      h2 {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .bio-section {
+      .content {
+        display: block;
+      }
+
+      .image img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+      }
+    }
+
+    .services .content .flash-cards {
+      grid-template-columns: 1fr;
+
+      .flash-card {
+        min-height: 150px;
+        height: auto;
       }
     }
   }

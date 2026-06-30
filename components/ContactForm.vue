@@ -49,10 +49,7 @@ const sendForm = async () => {
       method: 'POST',
       body: { name: name.value, phone: phone.value, email: email.value, caseDescription: caseDescription.value, token: token.value },
     })
-    const { createAlert } = await import('mosha-vue-toastify')
-    createAlert('Contact form submitted', { type: 'success', timeout: 2000, position: 'top-center' })
-    formEl.value?.reset()
-    navigateTo('/thank-you')
+    await navigateTo('/thank-you')
   } catch {
     token.value = ''
     recaptchaRef.value?.reset()

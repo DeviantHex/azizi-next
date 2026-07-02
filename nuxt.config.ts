@@ -88,6 +88,13 @@ export default defineNuxtConfig({
     head: {
       title: 'The Azizi Firm | Employment Law',
       htmlAttrs: { lang: 'en' },
+      style: [
+        {
+          // Prevent Vuetify's server-rendered markup from flashing before its
+          // client styles and responsive state are ready.
+          children: '@keyframes reveal-app{to{visibility:visible}}.app-shell{visibility:hidden;animation:reveal-app 0s 3s forwards}.app-shell.app-shell--ready{visibility:visible;animation:none}',
+        },
+      ],
       meta: [
         { name: 'description', content: 'California employment law firm. Wrongful termination, discrimination, harassment, retaliation & wage disputes. Free consultation. Serving all of California. No fees unless we win. Call (858) 829-3962.' },
         { property: 'og:title', content: 'The Azizi Firm | Employment Law' },

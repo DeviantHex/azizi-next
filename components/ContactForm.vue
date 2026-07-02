@@ -1,15 +1,15 @@
 <template>
   <VForm class="form" ref="formEl" @submit.prevent="sendForm">
     <div class="column">
-      <div class="field"><b>Name</b><VTextField v-model="name" :rules="[required]" /></div>
-      <div class="field"><b>Phone</b><VTextField v-model="phone" :rules="[required, validatePhone]" /></div>
-      <div class="field"><b>Email</b><VTextField v-model="email" :rules="[required, validateEmail]" /></div>
+      <div class="field"><b>Name</b><VTextField v-model="name" name="name" autocomplete="name" aria-label="Name" :rules="[required]" /></div>
+      <div class="field"><b>Phone</b><VTextField v-model="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" aria-label="Phone" :rules="[required, validatePhone]" /></div>
+      <div class="field"><b>Email</b><VTextField v-model="email" name="email" type="email" inputmode="email" autocomplete="email" aria-label="Email" spellcheck="false" :rules="[required, validateEmail]" /></div>
     </div>
     <div class="column">
-      <div class="field case-description"><b>Case Description</b><VTextarea v-model="caseDescription" hide-details="auto" rows="10" no-resize auto-grow /></div>
+      <div class="field case-description"><b>Case Description</b><VTextarea v-model="caseDescription" name="caseDescription" autocomplete="off" aria-label="Case Description" hide-details="auto" rows="10" no-resize auto-grow /></div>
       <div class="row">
         <VueRecaptcha :sitekey="siteKey" ref="recaptchaRef" @verify="onVerify" @expire="onExpire" @fail="onExpire" />
-        <VBtn color="secondary" type="submit">Send</VBtn>
+        <VBtn color="secondary" type="submit" :loading="isSubmitting">Send</VBtn>
       </div>
     </div>
   </VForm>
@@ -29,6 +29,7 @@ const caseDescription = ref('')
 const token = ref('')
 const formEl = ref<any>(null)
 const recaptchaRef = ref<any>(null)
+const isSubmitting = ref(false)
 
 const required = (v: string) => !!v || 'This field is required'
 const validateEmail = (v: string) => /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(v) || 'Must be a valid email'
@@ -38,11 +39,18 @@ const onVerify = (response: string) => { token.value = response }
 const onExpire = () => { token.value = '' }
 
 const sendForm = async () => {
+  if (isSubmitting.value) return
+
+  const { valid } = await formEl.value.validate()
+  if (!valid) return
+
   if (!token.value) {
     const { createAlert } = await import('mosha-vue-toastify')
     createAlert('Please complete the reCAPTCHA', { type: 'danger', timeout: 2000, position: 'top-center' })
     return
   }
+
+  isSubmitting.value = true
 
   try {
     await $fetch('/api/form/send', {
@@ -53,6 +61,10 @@ const sendForm = async () => {
   } catch {
     token.value = ''
     recaptchaRef.value?.reset()
+    const { createAlert } = await import('mosha-vue-toastify')
+    createAlert('We could not submit your message. Please try again.', { type: 'danger', timeout: 4000, position: 'top-center' })
+  } finally {
+    isSubmitting.value = false
   }
 }
 </script>

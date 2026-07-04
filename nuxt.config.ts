@@ -30,6 +30,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     recaptchaSecretKey: '',
     passkey: '',
+    firebaseServiceAccount: process.env.FIREBASE_SERVICE_ACCOUNT,
     firebaseProjectId: 'azizifirm-b9e16', // <-- ADD THIS (or use process.env.FIREBASE_PROJECT_ID)
     public: {
       firebaseApiKey: 'AIzaSyC_k6hmfJAvZhhLGTQ3FTjZkHyMNX0NMaY',

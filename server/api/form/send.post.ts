@@ -7,17 +7,6 @@ export default defineEventHandler(async (event) => {
   const { name, phone: phoneNumber, email, caseDescription, token } = body
 
   const config = useRuntimeConfig()
-  const resp: any = await $fetch('https://www.google.com/recaptcha/api/siteverify', {
-    method: 'POST',
-    body: new URLSearchParams({
-      secret: config.recaptchaSecretKey,
-      response: token || '',
-    }).toString(),
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-  })
-  if (!resp.success) {
-    throw createError({ statusCode: 400, statusMessage: 'Invalid reCAPTCHA' })
-  }
 
   if (!name || !phoneNumber || !email) {
     throw createError({ statusCode: 400, statusMessage: 'Missing required fields' })

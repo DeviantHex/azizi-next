@@ -6,43 +6,15 @@ export default defineEventHandler(async () => {
 
   const addUrl = (loc: string) => { urls.push({ loc, lastmod: today }) }
 
-  // Static pages
   for (const p of ['/', '/about', '/our-team', '/blogs', '/contact-us', '/privacy-policy', '/practice-areas', '/faq', '/compare']) {
     addUrl(p)
   }
 
-  // Practice area pages
   const practiceAreas = ['employment-law', 'personal-injury', 'auto-fraud', 'lemon-law']
   for (const p of practiceAreas) {
     addUrl(`/practice-areas/${p}`)
   }
 
-  const employmentTopics = [
-    'wrongful-termination',
-    'workplace-discrimination',
-    'sexual-harassment',
-    'wage-and-hour-disputes',
-    'whistleblower-protection',
-    'workplace-retaliation',
-  ]
-  for (const topic of employmentTopics) {
-    addUrl(`/employment-law/${topic}`)
-  }
-
-  const comparePages = [
-    'wrongful-termination-vs-discrimination',
-    'employment-lawyer-vs-self-representation',
-    'personal-injury-vs-workers-comp',
-    'lemon-law-vs-auto-fraud',
-    'settlement-vs-trial',
-    'at-will-vs-contract-employment',
-    'exempt-vs-non-exempt',
-  ]
-  for (const page of comparePages) {
-    addUrl(`/compare/${page}`)
-  }
-
-  // FAQ pages (15 pages)
   const faqs = [
     'what-is-wrongful-termination', 'signs-of-workplace-discrimination',
     'how-to-file-wrongful-termination-claim', 'california-at-will-employment',
@@ -57,7 +29,6 @@ export default defineEventHandler(async () => {
     addUrl(`/faq/${f}`)
   }
 
-  // Blog posts from Firestore
   try {
     const db = getFirestore()
     const snapshot = await db.collection('blogs')
@@ -77,7 +48,6 @@ export default defineEventHandler(async () => {
       })
     })
   } catch {
-    // Firestore may be unavailable in some environments
   }
 
   return urls

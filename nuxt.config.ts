@@ -30,6 +30,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     recaptchaSecretKey: '',
     passkey: '',
+    firebaseProjectId: 'azizifirm-b9e16', // <-- ADD THIS (or use process.env.FIREBASE_PROJECT_ID)
     public: {
       firebaseApiKey: 'AIzaSyC_k6hmfJAvZhhLGTQ3FTjZkHyMNX0NMaY',
       firebaseAuthDomain: 'azizifirm-b9e16.firebaseapp.com',
@@ -41,7 +42,7 @@ export default defineNuxtConfig({
       recaptchaSiteKey: '6LeHA0IqAAAAAN7KmjHbfhrLRqPaCmYGaouYbtvA',
     },
   },
-
+  
   site: {
     url: 'https://theazizifirm.com',
     name: 'The Azizi Firm',
@@ -90,8 +91,6 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'en' },
       style: [
         {
-          // Prevent Vuetify's server-rendered markup from flashing before its
-          // client styles and responsive state are ready.
           children: '@keyframes reveal-app{to{visibility:visible}}.app-shell{visibility:hidden;animation:reveal-app 0s 3s forwards}.app-shell.app-shell--ready{visibility:visible;animation:none}',
         },
       ],

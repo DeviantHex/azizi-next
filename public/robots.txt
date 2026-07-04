@@ -1,7 +1,3 @@
-# robots.txt for theazizifirm.com
-# Search, citation, and answer-engine bots are allowed.
-# Common Crawl is disallowed to reduce broad training reuse while preserving search access.
-
 User-agent: GPTBot
 Allow: /
 

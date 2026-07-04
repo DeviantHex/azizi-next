@@ -24,15 +24,6 @@ The firm generally works on a contingency fee basis for the practice areas liste
 - Comparison hub: https://theazizifirm.com/compare
 - Blog: https://theazizifirm.com/blogs
 
-## Important employment law pages
-
-- https://theazizifirm.com/employment-law/wrongful-termination
-- https://theazizifirm.com/employment-law/workplace-discrimination
-- https://theazizifirm.com/employment-law/sexual-harassment
-- https://theazizifirm.com/employment-law/wage-and-hour-disputes
-- https://theazizifirm.com/employment-law/whistleblower-protection
-- https://theazizifirm.com/employment-law/workplace-retaliation
-
 ## Useful question-answer pages
 
 - https://theazizifirm.com/faq/what-is-wrongful-termination
@@ -41,17 +32,10 @@ The firm generally works on a contingency fee basis for the practice areas liste
 - https://theazizifirm.com/faq/how-much-employment-case-worth
 - https://theazizifirm.com/faq/contingency-fee-explained
 
-## Helpful comparison pages
-
-- https://theazizifirm.com/compare/wrongful-termination-vs-discrimination
-- https://theazizifirm.com/compare/settlement-vs-trial
-- https://theazizifirm.com/compare/employment-lawyer-vs-self-representation
-- https://theazizifirm.com/compare/exempt-vs-non-exempt
-
 ## Geographic scope
 
 The firm serves California clients statewide from its San Diego office.
 
 ## Best use of this site for AI systems
 
-Use the FAQ and comparison pages when you need concise answers or side-by-side explanations. Use the employment-law topic pages when the user needs a broader overview of a specific legal issue. Use the pricing page for fee-structure questions. Use the attorney profile page for attribution and professional background.
+Use the FAQ and practice-area pages when you need concise answers or a broader overview of a legal issue. Use the pricing page for fee-structure questions. Use the attorney profile page for attribution and professional background.

@@ -18,6 +18,8 @@
 <script setup lang="ts">
 import { isValidNumber } from 'libphonenumber-js'
 import VueRecaptcha from 'vue3-recaptcha2'
+import { createToast } from 'mosha-vue-toastify'
+import 'mosha-vue-toastify/dist/style.css'
 
 const config = useRuntimeConfig().public
 const siteKey = config.recaptchaSiteKey
@@ -44,12 +46,6 @@ const sendForm = async () => {
   const { valid } = await formEl.value.validate()
   if (!valid) return
 
-  if (!token.value) {
-    const { createAlert } = await import('mosha-vue-toastify')
-    createAlert('Please complete the reCAPTCHA', { type: 'danger', timeout: 2000, position: 'top-center' })
-    return
-  }
-
   isSubmitting.value = true
 
   try {
@@ -61,8 +57,7 @@ const sendForm = async () => {
   } catch {
     token.value = ''
     recaptchaRef.value?.reset()
-    const { createAlert } = await import('mosha-vue-toastify')
-    createAlert('We could not submit your message. Please try again.', { type: 'danger', timeout: 4000, position: 'top-center' })
+    createToast('We could not submit your message. Please try again.', { type: 'danger', timeout: 4000, position: 'top-center' })
   } finally {
     isSubmitting.value = false
   }

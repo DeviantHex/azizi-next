@@ -17,6 +17,14 @@ jobs:
         run: npm install
       - name: Build Nuxt
         run: npm run build
+      - name: Debug - List build output
+        run: |
+          echo "=== .output/public/ ==="
+          ls -la .output/public/ || echo "NOT FOUND"
+          echo "=== .output/public/_nuxt/ ==="
+          ls -la .output/public/_nuxt/ | head -20 || echo "NOT FOUND"
+          echo "=== firebase.json ==="
+          cat firebase.json
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:

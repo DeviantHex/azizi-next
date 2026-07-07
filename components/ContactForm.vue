@@ -18,8 +18,10 @@
 <script setup lang="ts">
 import { isValidNumber } from 'libphonenumber-js'
 import VueRecaptcha from 'vue3-recaptcha2'
-import { createToast } from 'mosha-vue-toastify'
+import pkg from 'mosha-vue-toastify'
 import 'mosha-vue-toastify/dist/style.css'
+
+const { createToast } = pkg
 
 const config = useRuntimeConfig().public
 const siteKey = config.recaptchaSiteKey
